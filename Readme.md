@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Сергей Дербенцев](https://up.htmlacademy.ru/adaptive/18/user/1072419).
-* Наставник: `Неизвестно`.
+* Наставник: `Михаил Колотович`.
 
 ---
 
