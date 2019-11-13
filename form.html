@@ -7,15 +7,17 @@
 </head>
 
 <body>
-    <header class="header">
-        <nav class="header__nav">
-            <img class="header__logo" src="#" width="30" height="30" alt="Магазин Cat Energy">
-            <p class="header__text">
-                CAT ENERGY
-            </p>
-            <button class="header_button" type="button"></button>
-        </nav>
-    </header>
+        <header class="header">
+                <nav class="header__nav">
+                    <a href="index.html" class="header__logo">
+                        <img class="header__logo-img" src="путь до нашей картинки" width="30" height="30" alt="Cat Energy лого">
+                        <span class="visually-hidden">На главную страницу магазина</span>
+                    </a>
+                    <button class="header__button" type="button">
+                        <span>Открыть меню</span>
+                    </button>
+                </nav>
+            </header>
 
     <main>
         <form class="program-form" method="get" action="https://echo.htmlacademy.ru">
@@ -60,7 +62,7 @@
             <input class="program-form__checkbox" type="checkbox" name="ingredient" value="milk">Молоко
             <input class="program-form__checkbox" type="checkbox" name="ingredient" value="vitamins">Витамины
 
-            <button class="program-form__button" type="submit">Витамины</button>
+            <button class="btn" type="submit">Отправить заявку</button>
             <p class="program-form__footnote">
                 * - Обязательное поле
             </p>
