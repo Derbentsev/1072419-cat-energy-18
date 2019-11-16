@@ -20,64 +20,54 @@
   </header>
 
   <main>
-    <!--         <form class="program-form" method="get" action="https://echo.htmlacademy.ru">
-            <h1>Подбор программы</h1>
-            <p class="program-form__text">
-                Заполните анкету и мы подберем программу питания для вашего кота
-            </p>
-            <label class="program-form__label" for="name">Имя:*</label>
-            <input class="program-form__input" type="text" id="name" placeholder="Барсик" required>
-            <label class="program-form__label" for="weight">Вес (кг):*</label>
-            <input class="program-form__input" type="number" id="weight" placeholder="7" required>
-            <label class="program-form__label" for="age">Возраст (лет):</label>
-            <input class="program-form__input" type="number" id="age" placeholder="7">
+    <form class="program-form" method="get" action="https://echo.htmlacademy.ru">
+      <h1>Подбор программы</h1>
+      <p class="program-form__text">
+        Заполните анкету и мы подберем программу питания для вашего кота
+      </p>
+      <label class="program-form__label" for="name">Имя:*</label>
+      <input class="program-form__input" type="text" id="name" name="name" placeholder="Барсик" required>
+      <label class="program-form__label" for="weight">Вес (кг):*</label>
+      <input class="program-form__input" type="number" id="weight" name="weight" placeholder="7" required>
+      <label class="program-form__label" for="age">Возраст (лет):</label>
+      <input class="program-form__input" type="number" id="age" name="age" placeholder="7">
 
-            <input class="program-form__radio" type="radio" id="programChoice1" name="program" value="lose" checked>
-            <label class="program-form__label" for="programChoice1">Похудение</label>
-            <input class="program-form__radio" type="radio" id="programChoice2" name="program" value="gain">
-            <label class="program-form__label" for="programChoice2">Набор массы</label>
-            <input class="program-form__radio" type="radio" id="programChoice3" name="program" value="advice">
-            <label class="program-form__label" for="programChoice3">Не знаю (нужен ваш совет)</label>
+      <input class="program-form__radio" type="radio" id="programChoice1" name="program" value="lose" checked>
+      <label class="program-form__label" for="programChoice1">Похудение</label>
+      <input class="program-form__radio" type="radio" id="programChoice2" name="program" value="gain">
+      <label class="program-form__label" for="programChoice2">Набор массы</label>
+      <input class="program-form__radio" type="radio" id="programChoice3" name="program" value="advice">
+      <label class="program-form__label" for="programChoice3">Не знаю (нужен ваш совет)</label>
 
-            <p class="program-form__section-name">
-                Контактные данные (владельца кота)
-            </p>
-            <label class="program-form__label" for="email">Email:*</label>
-            <input class="program-form__input" type="email" id="email" placeholder="kuklachev@gmail.com" required>
-            <label class="program-form__label" for="telephone">Телефон:*</label>
-            <input class="program-form__input" type="tel" id="telephone" placeholder="8(960)900-60-90" required>
+      <p class="program-form__text">Контактные данные (владельца кота)</p>
+      <label class="program-form__label" for="email">Email:*</label>
+      <input class="program-form__input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
+      <label class="program-form__label" for="telephone">Телефон:*</label>
+      <input class="program-form__input" type="tel" id="telephone" name="telephone" placeholder="8(960)900-60-90" required>
 
-            <p class="program-form__section-name">
-                Комментарий
-            </p>
-            <textarea class="program-form__comments" placeholder="Расскажите обо всех повадках кота">
-            </textarea>
+      <p class="program-form__text">Комментарий</p>
+      <textarea class="program-form__habits" placeholder="Расскажите обо всех повадках кота" name="habits"></textarea>
 
-            <p class="program-form__section-name">
-                Дополнительно
-            </p>
-            <input class="program-form__checkbox" type="checkbox" name="ingredient" value="noSugar"
-                checked>Сахарозаменитель
-            <input class="program-form__checkbox" type="checkbox" name="ingredient" value="water">Питьевая вода
-            <input class="program-form__checkbox" type="checkbox" name="ingredient" value="milk">Молоко
-            <input class="program-form__checkbox" type="checkbox" name="ingredient" value="vitamins">Витамины
+      <p class="program-form__text">Дополнительно</p>
+      <input class="program-form__checkbox" type="checkbox" name="ingredient" value="noSugar" checked>Сахарозаменитель
+      <input class="program-form__checkbox" type="checkbox" name="ingredient" value="water">Питьевая вода
+      <input class="program-form__checkbox" type="checkbox" name="ingredient" value="milk">Молоко
+      <input class="program-form__checkbox" type="checkbox" name="ingredient" value="vitamins">Витамины
 
-            <button class="btn" type="submit">Отправить заявку</button>
-            <p class="program-form__footnote">
-                * - Обязательное поле
-            </p>
-        </form>
+      <button class="btn" type="submit">Отправить заявку</button>
+      <p class="program-form__footnote">* - Обязательное поле</p>
+    </form>
 
-        <section class="contacts">
-            <h2 class="visually-hidden">Контакты и схема проезда</h2>
-            <div class="contacts__text-1">
-                Приглашаем к сотрудничеству дилеров!
-            </div>
-            <div class="contacts__text-2">
-                ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-            </div>
-            <img class="map" src="#" width="150" height="100" alt="Схема проезда">
-        </section> -->
+    <section class="contacts">
+        <h2 class="visually-hidden">Контакты и схема проезда</h2>
+        <div class="contacts__cooperation">
+          Приглашаем к сотрудничеству дилеров!
+        </div>
+        <div class="contacts__address">
+          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+        </div>
+        <img class="map" src="#" width="150" height="100" alt="Схема проезда">
+      </section>
   </main>
 
   <footer class="footer">
