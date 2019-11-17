@@ -14,70 +14,79 @@
         <span class="visually-hidden">На главную страницу магазина</span>
       </a>
       <button class="header__button" type="button">
-        <span>Открыть меню</span>
+        <span class="visually-hidden">Открыть меню</span>
       </button>
     </nav>
   </header>
 
   <main>
-    <!--         <form class="program-form" method="get" action="https://echo.htmlacademy.ru">
-            <h1>Подбор программы</h1>
-            <p class="program-form__text">
-                Заполните анкету и мы подберем программу питания для вашего кота
-            </p>
-            <label class="program-form__label" for="name">Имя:*</label>
-            <input class="program-form__input" type="text" id="name" placeholder="Барсик" required>
-            <label class="program-form__label" for="weight">Вес (кг):*</label>
-            <input class="program-form__input" type="number" id="weight" placeholder="7" required>
-            <label class="program-form__label" for="age">Возраст (лет):</label>
-            <input class="program-form__input" type="number" id="age" placeholder="7">
+    <form class="program-form" method="get" action="https://echo.htmlacademy.ru">
+      <h1 class="section-name">Подбор программы</h1>
+      <p class="program-form__text">
+        Заполните анкету и мы подберем программу питания для вашего кота
+      </p>
 
-            <input class="program-form__radio" type="radio" id="programChoice1" name="program" value="lose" checked>
-            <label class="program-form__label" for="programChoice1">Похудение</label>
-            <input class="program-form__radio" type="radio" id="programChoice2" name="program" value="gain">
-            <label class="program-form__label" for="programChoice2">Набор массы</label>
-            <input class="program-form__radio" type="radio" id="programChoice3" name="program" value="advice">
-            <label class="program-form__label" for="programChoice3">Не знаю (нужен ваш совет)</label>
+      <div class="program-form__main-info-wrapper">
+        <label class="program-form__label" for="name">Имя:*</label>
+        <input class="program-form__input" type="text" id="name" name="name" placeholder="Барсик" required>
+        <label class="program-form__label" for="weight">Вес (кг):*</label>
+        <input class="program-form__input" type="number" id="weight" name="weight" placeholder="7" required>
+        <label class="program-form__label" for="age">Возраст (лет):</label>
+        <input class="program-form__input" type="number" id="age" name="age" placeholder="7">
+      </div>
 
-            <p class="program-form__section-name">
-                Контактные данные (владельца кота)
-            </p>
-            <label class="program-form__label" for="email">Email:*</label>
-            <input class="program-form__input" type="email" id="email" placeholder="kuklachev@gmail.com" required>
-            <label class="program-form__label" for="telephone">Телефон:*</label>
-            <input class="program-form__input" type="tel" id="telephone" placeholder="8(960)900-60-90" required>
+      <div class="program-form__program-choice-wrapper">
+        <input class="program-form__radio" type="radio" id="programChoice1" name="program" value="lose" checked>
+        <label class="program-form__label" for="programChoice1">Похудение</label>
+        <input class="program-form__radio" type="radio" id="programChoice2" name="program" value="gain">
+        <label class="program-form__label" for="programChoice2">Набор массы</label>
+        <input class="program-form__radio" type="radio" id="programChoice3" name="program" value="advice">
+        <label class="program-form__label" for="programChoice3">Не знаю (нужен ваш совет)</label>
+      </div>
 
-            <p class="program-form__section-name">
-                Комментарий
-            </p>
-            <textarea class="program-form__comments" placeholder="Расскажите обо всех повадках кота">
-            </textarea>
+      <div class="program-form__contacts-wrapper">
+        <p class="subsection-name">Контактные данные (владельца кота)</p>
+        <label class="program-form__label" for="email">Email:*</label>
+        <input class="program-form__input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com"
+          required>
+        <label class="program-form__label" for="telephone">Телефон:*</label>
+        <input class="program-form__input" type="tel" id="telephone" name="telephone" placeholder="8(960)900-60-90"
+          required>
+      </div>
 
-            <p class="program-form__section-name">
-                Дополнительно
-            </p>
-            <input class="program-form__checkbox" type="checkbox" name="ingredient" value="noSugar"
-                checked>Сахарозаменитель
-            <input class="program-form__checkbox" type="checkbox" name="ingredient" value="water">Питьевая вода
-            <input class="program-form__checkbox" type="checkbox" name="ingredient" value="milk">Молоко
-            <input class="program-form__checkbox" type="checkbox" name="ingredient" value="vitamins">Витамины
+      <div class="program-form__comment-wrapper">
+        <p class="subsection-name">Комментарий</p>
+        <textarea class="program-form__habits" placeholder="Расскажите обо всех повадках кота"
+          name="comment"></textarea>
+      </div>
 
-            <button class="btn" type="submit">Отправить заявку</button>
-            <p class="program-form__footnote">
-                * - Обязательное поле
-            </p>
-        </form>
+      <div class="program-form__additional-info-wrapper">
+        <p class="subsection-name">Дополнительно</p>
+        <input class="program-form__checkbox" id="ingredient1" type="checkbox" name="ingredient" value="noSugar"
+          checked>
+        <label for="ingredient1">Сахарозаменитель</label>
+        <input class="program-form__checkbox" id="ingredient2" type="checkbox" name="ingredient" value="water">
+        <label for="ingredient2">Питьевая вода</label>
+        <input class="program-form__checkbox" id="ingredient3" type="checkbox" name="ingredient" value="milk">
+        <label for="ingredient3">Молоко</label>
+        <input class="program-form__checkbox" id="ingredient4" type="checkbox" name="ingredient" value="vitamins">
+        <label for="ingredient4">Витамины</label>
+      </div>
 
-        <section class="contacts">
-            <h2 class="visually-hidden">Контакты и схема проезда</h2>
-            <div class="contacts__text-1">
-                Приглашаем к сотрудничеству дилеров!
-            </div>
-            <div class="contacts__text-2">
-                ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-            </div>
-            <img class="map" src="#" width="150" height="100" alt="Схема проезда">
-        </section> -->
+      <button class="btn" type="submit">Отправить заявку</button>
+      <p class="program-form__footnote">* - Обязательное поле</p>
+    </form>
+
+    <section class="contacts">
+      <h2 class="visually-hidden">Контакты и схема проезда</h2>
+      <div class="contacts__cooperation">
+        Приглашаем к сотрудничеству дилеров!
+      </div>
+      <div class="contacts__address">
+        ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+      </div>
+      <img class="map" src="#" width="150" height="100" alt="Схема проезда">
+    </section>
   </main>
 
   <footer class="footer">
