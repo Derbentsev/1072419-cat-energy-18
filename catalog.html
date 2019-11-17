@@ -14,13 +14,13 @@
         <span class="visually-hidden">На главную страницу магазина</span>
       </a>
       <button class="header__button" type="button">
-        <span>Открыть меню</span>
+        <span class="visually-hidden">Открыть меню</span>
       </button>
     </nav>
   </header>
 
   <main>
-    <h1>Каталог продукции</h1>
+    <h1 class="section-name">Каталог продукции</h1>
     <section class="catalog">
       <h2 class="visually-hidden">Выбор товара для заказа</h2>
       <ul class="catalog__list">
@@ -47,9 +47,7 @@
               </li>
             </ul>
           </div>
-          <a class="btn" href="order.html">
-            Заказать
-          </a>
+          <a class="btn" href="order.html">Заказать</a>
         </li>
         <li class="catalog__item">
           <a class="catalog__image" href="order.html">
@@ -74,9 +72,7 @@
               </li>
             </ul>
           </div>
-          <a class="btn" href="order.html">
-            Заказать
-          </a>
+          <a class="btn" href="order.html">Заказать</a>
         </li>
         <li class="catalog__item">
           <a class="catalog__image" href="order.html">
@@ -186,7 +182,6 @@
             <a class="catalog__item-name" href="order.html">
               Cat Energy Slim 500 г
             </a>
-
             <ul class="decription-list">
               <li class="decription-list__item">
                 <span>Объем</span>
@@ -217,37 +212,37 @@
     </section>
 
     <section class="additional-goods">
-      <h2>Дополнительные товары</h2>
+      <h2 class="subsection-name">Дополнительные товары</h2>
       <ul class="additional-goods__list">
         <li class="additional-goods__item">
           <p class="additional-goods__name">Сахарозаменитель</p>
           <p class="additional-goods__description">
-            <div>1 упаковка (100 г)</div>
-            <div>100 р</div>
+            <span class="additional-goods__quantity">1 упаковка (100 г)</span>
+            <span class="additional-goods__price">100 р</span>
           </p>
           <a class="btn" href="order.html">Заказать</a>
         </li>
         <li class="additional-goods__item">
           <p class="additional-goods__name">Питьевая вода</p>
           <p class="additional-goods__description">
-            <div>5 литров</div>
-            <div>50 р</div>
+            <span class="additional-goods__quantity">5 литров</span>
+            <span class="additional-goods__price">50 р</span>
           </p>
           <a class="btn" href="order.html">Заказать</a>
         </li>
         <li class="additional-goods__item">
           <p class="additional-goods__name">Молоко</p>
           <p class="additional-goods__description">
-            <div>1 литр</div>
-            <div>100 р</div>
+            <span class="additional-goods__quantity">1 литр</span>
+            <span class="additional-goods__price">100 р</span>
           </p>
           <a class="btn" href="order.html">Заказать</a>
         </li>
         <li class="additional-goods__item">
           <p class="additional-goods__name">Витамины</p>
           <p class="additional-goods__description">
-            <div>1 упаковка (30 г)</div>
-            <div>300 р</div>
+            <span class="additional-goods__quantity">1 упаковка (30 г)</span>
+            <span class="additional-goods__price">300 р</span>
           </p>
           <a class="btn" href="order.html">Заказать</a>
         </li>
@@ -262,13 +257,10 @@
     </section>
 
     <section class="contacts">
-      <h2 class="visually-hidden">Контакты и схема проезда</h2>
-      <div class="contacts__cooperation">
-        Приглашаем к сотрудничеству дилеров!
-      </div>
-      <div class="contacts__address">
+      <h2 class="visually-hidden">Приглашаем к сотрудничеству дилеров!</h2>
+      <p class="contacts__address">
         ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-      </div>
+      </p>
       <img class="map" src="#" width="150" height="100" alt="Схема проезда">
     </section>
   </main>
