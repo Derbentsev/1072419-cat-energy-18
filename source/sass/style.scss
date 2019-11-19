@@ -6,8 +6,8 @@
 /* @import "blocks/contacts.scss"; */
 @import "blocks/description-list.scss";
 /* @import "blocks/example.scss"; */
-@import "blocks/footer.scss";
-@import "blocks/header.scss";
+/* @import "blocks/footer.scss"; */
+/* @import "blocks/header.scss"; */
 @import "blocks/main-index__h1.scss";
 @import "blocks/program-choice.scss";
 /* @import "blocks/program-form.scss"; */
@@ -16,7 +16,7 @@
 @import "blocks/social-list.scss";
 @import "blocks/subsection-name.scss";
 
-@font-face{
+@font-face {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
@@ -25,7 +25,7 @@
     url("../fonts/oswaldmedium.woff") format("woff");
 }
 
-@font-face{
+@font-face {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 500;
@@ -34,29 +34,28 @@
     url("../fonts/oswaldmedium.woff") format("woff");
 }
 
-@font-face{
+@font-face {
   font-family: "ArialMT";
   font-style: normal;
   font-weight: 400;
   src: local("ArialMT"),
-    url("../fonts/arialMT.ttf") format("ttf");
+    url("../fonts/arialMT.woff") format("woff");
 }
 
 body {
   font-family: "Oswald", "Arial", sans-serif;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
 .visually-hidden {
-	position: absolute;
-	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-	clip: rect(1px, 1px, 1px, 1px);
-	padding:0;
-	border:0;
-	height: 1px; 
-	width: 1px;
-	overflow: hidden;
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
 }
