@@ -2,16 +2,13 @@
   list-style: none;
 }
 
-.description-list__text--left {
+.description-list__text{
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
   color: #444444;
-}
 
-.description-list__text--right {
-  font-family: "Arial", sans-serif;
-  font-size: 12px;
-  line-height: 16px;
-  color: #444444;
+  &--right{
+    text-align: right;
+  }
 }
