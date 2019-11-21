@@ -1,0 +1,23 @@
+.program-choice {
+  box-sizing: border-box;
+  width: 320px;
+  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  padding-top: 29px;
+  padding-left: 38px;
+  padding-right: 38px;
+  padding-bottom: 217px;
+}
+
+.program-choice__text {
+  color: white;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.program-choice__button {
+  font-size: 14px;
+  line-height: 18px;
+}
