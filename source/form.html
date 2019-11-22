@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <link href="/css/style.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <title>Cat Energy</title>
 </head>
 
@@ -57,7 +57,7 @@
 
       <div class="program-form__comment-wrapper">
         <p class="subsection-name">Комментарий</p>
-        <textarea class="program-form__habits" placeholder="Расскажите обо всех повадках кота"
+        <textarea class="program-form__comment" placeholder="Расскажите обо всех повадках кота"
           name="comment"></textarea>
       </div>
 
@@ -65,13 +65,13 @@
         <p class="subsection-name">Дополнительно</p>
         <input class="program-form__checkbox" id="ingredient1" type="checkbox" name="ingredient" value="noSugar"
           checked>
-        <label for="ingredient1">Сахарозаменитель</label>
+        <label class="program-form__label" for="ingredient1">Сахарозаменитель</label>
         <input class="program-form__checkbox" id="ingredient2" type="checkbox" name="ingredient" value="water">
-        <label for="ingredient2">Питьевая вода</label>
+        <label class="program-form__label" for="ingredient2">Питьевая вода</label>
         <input class="program-form__checkbox" id="ingredient3" type="checkbox" name="ingredient" value="milk">
-        <label for="ingredient3">Молоко</label>
+        <label class="program-form__label" for="ingredient3">Молоко</label>
         <input class="program-form__checkbox" id="ingredient4" type="checkbox" name="ingredient" value="vitamins">
-        <label for="ingredient4">Витамины</label>
+        <label class="program-form__label" for="ingredient4">Витамины</label>
       </div>
 
       <button class="btn" type="submit">Отправить заявку</button>
@@ -79,15 +79,12 @@
     </form>
 
     <section class="contacts">
-      <h2 class="visually-hidden">Контакты и схема проезда</h2>
-      <div class="contacts__cooperation">
-        Приглашаем к сотрудничеству дилеров!
-      </div>
-      <div class="contacts__address">
-        ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-      </div>
-      <img class="contacts__map" src="#" width="150" height="100" alt="Схема проезда">
-    </section>
+        <h2 class="contacts__cooperation">Приглашаем к сотрудничеству дилеров!</h2>
+        <p class="contacts__address">
+          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+        </p>
+        <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Схема проезда">
+      </section>
   </main>
 
   <footer class="footer">
