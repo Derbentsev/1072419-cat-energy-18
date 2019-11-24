@@ -1,3 +1,26 @@
+.header {
+  outline: 1px solid yellow;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
 .header__nav {
+  outline: 1px solid red;
   width: 380px;
+}
+
+@media(min-width: $tablet-width) {
+  .header__nav {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .header__nav {
+    width: 1440px;
+    margin: 0 auto;
+  }
 }
