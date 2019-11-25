@@ -1,3 +1,20 @@
 .footer {
+  outline: 1px solid yellow;
   background-color: #444444;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.footer__container {
+  outline: 1px solid red;
+  width: 320px;
+  margin: 0 auto;
+
+  @include tablet {
+    width: 768px;
+  }
+
+  @include desktop {
+    width: 1440px;
+  }
 }

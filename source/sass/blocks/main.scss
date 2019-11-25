@@ -1,12 +1,20 @@
-.header {
+.main {
   outline: 1px solid yellow;
-  padding-left: 20px;
   padding-right: 20px;
-  padding-top: 11px;
-  padding-bottom: 11px;
+  padding-left: 20px;
+
+  @include tablet {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  @include desktop{
+    padding-right: 100px;
+    padding-left: 100px;
+  }
 }
 
-.header__nav {
+.main__container {
   outline: 1px solid red;
   width: 320px;
   margin: 0 auto;
