@@ -1,4 +1,4 @@
-.catalog-choice__list{
+.catalog-choice__list {
   display: flex;
   flex-wrap: wrap;
 }
@@ -13,11 +13,11 @@
   background-color: #f2f2f2;
   list-style: none;
 
-  @include tablet{
+  @include tablet {
     width: 708px;
   }
 
-  @include desktop{
+  @include desktop {
     width: 570px;
   }
 }
@@ -27,8 +27,8 @@
   font-size: 24px;
   line-height: 37px;
   color: #111111;
-  
-  @include tablet{
+
+  @include tablet {
     font-size: 36px;
     line-height: 37px;
   }
@@ -40,7 +40,7 @@
   line-height: 18px;
   color: #444444;
 
-  @include tablet{
+  @include tablet {
     font-size: 16px;
     line-height: 24px;
   }
@@ -51,7 +51,7 @@
   line-height: 16px;
   color: #111111;
 
-  @include tablet{
+  @include tablet {
     font-size: 20px;
     line-height: 20px;
   }
