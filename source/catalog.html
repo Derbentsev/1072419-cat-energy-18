@@ -20,7 +20,7 @@
     </nav>
   </header>
 
-  <main>
+  <main class="main">
     <h1 class="section-name">Каталог продукции</h1>
     <section class="catalog">
       <h2 class="visually-hidden">Выбор товара для заказа</h2>
@@ -200,16 +200,18 @@
           </div>
           <a class="btn" href="order.html">Заказать</a>
         </li>
+        <li class="catalog__item catalog__item--show-all">
+          <!-- <div class="catalog__show-all"> -->
+          <p class="catalog__plus">
+            Показать еще 100500 товаров
+          </p>
+          <p class="catalog__intrigue">
+            На самом деле вкусов гораздо больше!
+          </p>
+          <button class="btn btn--silver" type="button">Показать все</button>
+          <!-- </div> -->
+        </li>
       </ul>
-      <div class="catalog__show-all">
-        <p class="catalog__plus">
-          Показать еще 100500 товаров
-        </p>
-        <p class="catalog__intrigue">
-          На самом деле вкусов гораздо больше!
-        </p>
-        <button class="btn btn--silver" type="button">Показать все</button>
-      </div>
     </section>
 
     <section class="additional-goods">
@@ -267,10 +269,12 @@
   </main>
 
   <footer class="footer">
-    <a href="index.html" class="footer__logo">
-      <img class="footer__logo-img" src="путь до нашей картинки" width="30" height="30" alt="Cat Energy лого">
-      <span class="visually-hidden">На главную страницу магазина</span>
-    </a>
+    <!-- <div> -->
+      <a href="index.html" class="footer__logo">
+        <img class="footer__logo-img" src="путь до нашей картинки" width="30" height="30" alt="Cat Energy лого">
+        <span class="visually-hidden">На главную страницу магазина</span>
+      </a>
+    <!-- </div> -->
     <ul class="social-list">
       <li class="social-list__item">
         <a href="#">
@@ -288,10 +292,12 @@
         </a>
       </li>
     </ul>
-    <a href="https://htmlacademy.ru/intensive/adaptive">
-      <span class="footer__logo-text">HTML Academy</span>
-      <img class="footer__logo-img" src="#" width="30" height="30" alt="Лого HTML Академии">
-    </a>
+    <!-- <div> -->
+      <a href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="footer__logo-text">HTML Academy</span>
+        <img class="footer__logo-img" src="#" width="30" height="30" alt="Лого HTML Академии">
+      </a>
+    <!-- </div> -->
   </footer>
 </body>
 
