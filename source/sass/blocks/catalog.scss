@@ -1,7 +1,13 @@
+.catalog__description{
+  margin-top: 35px;
+}
+
 .catalog__list {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  padding: 0;
+  margin: 0;
 
   @include tablet {
     flex-direction: row;
@@ -9,6 +15,9 @@
 }
 
 .catalog__item {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
   width: 280px;
 
@@ -52,4 +61,8 @@
   line-height: 16px;
   color: #444444;
   text-align: center;
+}
+
+.catalog__order-button{
+  width: 100%;
 }
