@@ -1,6 +1,4 @@
 .btn {
-  /* display: block; */
-  /* width: 280px; */
   padding-top: 11px;
   padding-bottom: 11px;
   background-color: #68b738;
@@ -15,14 +13,9 @@
   }
 
   @include tablet {
-    width: 245px;
     padding-top: 14px;
     padding-bottom: 14px;
-  }
-
-  @include desktop {
-    width: 245px;
-    padding-top: 14px;
-    padding-bottom: 14px;
+/*     padding-left: 25px;
+    padding-right: 25px; */
   }
 }

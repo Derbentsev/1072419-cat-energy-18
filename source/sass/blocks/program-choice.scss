@@ -1,15 +1,13 @@
 .program-choice {
   display: flex;
   flex-direction: column;
-  /* width: 320px; */
+  position: relative;
   box-sizing: border-box;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   padding-top: 110px;
-/*   padding-left: 20px;
-  padding-right: 20px; */
-/*   padding-bottom: 217px; */
   margin-top: -90px;
+  z-index: -1;
 
   @include tablet{
     background-image: none;
@@ -17,6 +15,10 @@
 
   @include desktop{
     background-image: url("../img/index-background-desktop@1x.jpg");
+    width: 720px;
+    height: 720px;
+    margin-left: auto;
+    margin-top: -195px;
   }
 }
 
@@ -33,10 +35,25 @@
     font-size: 20px;
     font-weight: 20px;
   }
+
+  @include desktop{
+    left: -400px;
+    top: 200px;
+    position: absolute;
+  }
 }
 
 .program-choice__image{
   margin-top: 10px;
+
+  @include tablet{
+    position: absolute;
+    z-index: -1;
+  }
+
+  @include desktop{
+    z-index: 1;
+  }
 }
 
 .program-choice__button {
@@ -46,7 +63,18 @@
   padding-right: 70px;
 
   @include tablet {
+    width: 245px;
     font-size: 20px;
     line-height: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 200px;
+  }
+
+  @include desktop{
+    position: absolute;
+    left: -400px;
+    top: 220px;
   }
 }
