@@ -1,6 +1,4 @@
 .btn {
-  display: block;
-  width: 280px;
   padding-top: 11px;
   padding-bottom: 11px;
   background-color: #68b738;
@@ -10,7 +8,19 @@
   border: none;
 
   &--silver {
+    width: 100%;
     color: #444444;
     background-color: #f2f2f2;
+
+    @include tablet {
+      margin-top: auto;
+    }
+  }
+
+  @include tablet {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    /*     padding-left: 25px;
+    padding-right: 25px; */
   }
 }

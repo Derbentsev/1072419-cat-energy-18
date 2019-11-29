@@ -1,25 +1,77 @@
 .advantages__list {
+  display: flex;
+  flex-wrap: wrap;
   padding: 0;
+  margin: 0;
 }
 
 .advantages__item {
-  width: 280px;
+  position: relative;
+  /* width: 280px; */
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
   list-style: none;
   margin-top: 16px;
-  margin-left: 60px;
+  margin-left: 80px;
+
+  @include tablet {
+    width: 201px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 80px;
+    margin-bottom: 245px;
+
+    &:nth-of-type(2n) {
+      margin-left: 170px;
+    }
+
+    &:nth-of-type(1),
+    &:nth-of-type(2) {
+      margin-top: 200px;
+    }
+
+    &:nth-of-type(2n+1) {
+      margin-left: 0;
+    }
+  }
+
+  @include desktop {
+    margin-left: 100px;
+    margin-top: 150px;
+
+    &:nth-of-type(2n) {
+      margin-left: 100px;
+    }
+
+    &:nth-of-type(1),
+    &:nth-of-type(2) {
+      margin-top: 150px;
+    }
+
+    &:nth-of-type(2n+1) {
+      margin-left: 100px;
+    }
+  }
 
   &::before {
     content: "";
     position: absolute;
-    left: 0;
+    top: -5px;
+    left: -80px;
     width: 60px;
     height: 60px;
     background-repeat: no-repeat;
     background-color: #68b738;
+    background-position: 50% 50%;
+
+    @include tablet {
+      left: -1px;
+      top: -95px;
+      width: 80px;
+      height: 80px;
+    }
   }
 
   &:nth-of-type(1)::before {
@@ -36,5 +88,41 @@
 
   &:nth-of-type(4)::before {
     background-image: url("../img/advantage-clock@1x.png");
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    font-family: "Oswald", sans-serif;
+    font-size: 281px;
+    line-height: 281px;
+    color: #f2f2f2;
+    top: -120px;
+    right: -45px;
+    z-index: -1;
+  }
+
+  &:nth-of-type(1)::after {
+    @include tablet {
+      content: "1";
+    }
+  }
+
+  &:nth-of-type(2)::after {
+    @include tablet {
+      content: "2";
+    }
+  }
+
+  &:nth-of-type(3)::after {
+    @include tablet {
+      content: "3";
+    }
+  }
+
+  &:nth-of-type(4)::after {
+    @include tablet {
+      content: "4";
+    }
   }
 }
