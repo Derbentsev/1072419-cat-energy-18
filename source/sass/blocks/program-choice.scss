@@ -9,11 +9,11 @@
   margin-top: -90px;
   z-index: -1;
 
-  @include tablet{
+  @include tablet {
     background-image: none;
   }
 
-  @include desktop{
+  @include desktop {
     background-image: url("../img/index-background-desktop@1x.jpg");
     width: 720px;
     height: 720px;
@@ -36,22 +36,22 @@
     font-weight: 20px;
   }
 
-  @include desktop{
+  @include desktop {
     left: -400px;
     top: 200px;
     position: absolute;
   }
 }
 
-.program-choice__image{
+.program-choice__image {
   margin-top: 10px;
 
-  @include tablet{
+  @include tablet {
     position: absolute;
     z-index: -1;
   }
 
-  @include desktop{
+  @include desktop {
     z-index: 1;
   }
 }
@@ -72,7 +72,7 @@
     margin-bottom: 200px;
   }
 
-  @include desktop{
+  @include desktop {
     position: absolute;
     left: -400px;
     top: 220px;

@@ -49,8 +49,8 @@
   text-transform: uppercase;
 }
 
-.header__page-name--white{
-  @include desktop{
+.header__page-name--white {
+  @include desktop {
     color: white;
   }
 }

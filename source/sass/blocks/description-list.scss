@@ -1,11 +1,11 @@
-.description-list{
+.description-list {
   padding: 0;
 }
 
 .description-list__item {
   list-style: none;
 
-  @include tablet{
+  @include tablet {
     display: flex;
     justify-content: space-between;
   }
