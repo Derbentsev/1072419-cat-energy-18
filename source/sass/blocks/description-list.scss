@@ -1,5 +1,14 @@
+.description-list{
+  padding: 0;
+}
+
 .description-list__item {
   list-style: none;
+
+  @include tablet{
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .description-list__text {
