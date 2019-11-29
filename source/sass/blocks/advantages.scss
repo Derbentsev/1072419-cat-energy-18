@@ -93,12 +93,12 @@
   &::after {
     content: "";
     position: absolute;
+    font-family: "Oswald", sans-serif;
     font-size: 281px;
     line-height: 281px;
     color: #f2f2f2;
     top: -120px;
     right: -45px;
-    font-family: "Oswald";
     z-index: -1;
   }
 
