@@ -1,6 +1,20 @@
+.additional-goods {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 .additional-goods__list {
   list-style: none;
   padding: 0;
+}
+
+.additional-goods__item{
+  @include tablet{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
 .additional-goods__name {
@@ -8,19 +22,40 @@
   line-height: 16px;
   color: #222222;
   text-transform: uppercase;
+
+  @include tablet{
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
-.additional-goods__quantity {
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 14px;
-  color: #444444;
-}
-
+.additional-goods__quantity,
 .additional-goods__price {
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
   color: #444444;
+
+  @include tablet{
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+/* .additional-goods__price {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
   text-align: right;
+
+  @include tablet{
+    font-size: 14px;
+    line-height: 14px;
+  }
+} */
+
+.additional-goods__button {
+  display: block;
+  width: 100%;
 }
