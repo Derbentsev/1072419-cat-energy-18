@@ -5,12 +5,12 @@
   padding-bottom: 25px;
   background-color: #f2f2f2;
 
-  @include tablet{
+  @include tablet {
     width: 100%;
     background-color: transparent;
   }
 
-  @include desktop{
+  @include desktop {
     display: flex;
     flex-wrap: wrap;
     background-color: #f2f2f2;
@@ -23,7 +23,7 @@
   line-height: 18px;
   color: #444444;
 
-  @include desktop{
+  @include desktop {
     width: 430px;
   }
 }
@@ -61,12 +61,12 @@
   text-transform: uppercase;
   text-align: center;
 
-  @include desktop{
+  @include desktop {
     text-align: left;
   }
 }
 
-.example__stripe{
+.example__stripe {
   display: flex;
   justify-content: space-between;
 }
@@ -74,17 +74,18 @@
 .example__stripe-button {
   font-size: 16px;
   line-height: 20px;
-    color: #111111;
+  color: #111111;
   background-color: transparent;
   border: none;
   text-transform: uppercase;
 }
 
-.example__image{
-  @include tablet{
+.example__image {
+  @include tablet {
     background-color: #f2f2f2;
   }
-  @include desktop{
+
+  @include desktop {
     background-color: transparent;
   }
 }

@@ -9,8 +9,8 @@
   padding: 0;
 }
 
-.additional-goods__item{
-  @include tablet{
+.additional-goods__item {
+  @include tablet {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -23,7 +23,7 @@
   color: #222222;
   text-transform: uppercase;
 
-  @include tablet{
+  @include tablet {
     font-size: 20px;
     line-height: 20px;
   }
@@ -36,7 +36,7 @@
   line-height: 14px;
   color: #444444;
 
-  @include tablet{
+  @include tablet {
     font-size: 16px;
     line-height: 20px;
   }

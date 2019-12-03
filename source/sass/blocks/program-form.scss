@@ -11,7 +11,7 @@
   color: #111111;
   text-transform: uppercase;
 
-  @include tablet{
+  @include tablet {
     font-size: 20px;
     font-weight: 30px;
   }
@@ -24,7 +24,7 @@
   text-transform: uppercase;
   align-self: center;
 
-  @include tablet{
+  @include tablet {
     font-size: 20px;
     line-height: 20px;
   }
@@ -39,7 +39,7 @@
   color: #444444;
   border: 1px solid rgba(205, 205, 205, 0.5);
 
-  @include tablet{
+  @include tablet {
     font-size: 20px;
     line-height: 20px;
   }
@@ -47,7 +47,7 @@
 
 .program-form__input::-webkit-outer-spin-button,
 .program-form__input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+/*   -webkit-appearance: none; */
   margin: 0;
 }
 
@@ -58,7 +58,7 @@
   color: #444444;
   text-align: center;
 
-  @include tablet{
+  @include tablet {
     width: 50%;
   }
 }
@@ -68,16 +68,16 @@
   flex-wrap: wrap;
 }
 
-.program-form__program-choice-wrapper{
+.program-form__program-choice-wrapper {
   display: flex;
   flex-direction: column;
 }
 
-.program-form__additional-wrapper-in{
+.program-form__additional-wrapper-in {
   display: flex;
   flex-direction: column;
 
-  @include tablet{
+  @include tablet {
     flex-direction: row;
   }
 }
@@ -96,28 +96,28 @@
   line-height: 18px;
 }
 
-.program-form__submit{
-  @include tablet{
+.program-form__submit {
+  @include tablet {
     width: 50%;
   }
 }
 
-.program-form__main-info-and-program-choice-wrapper{
-  @include desktop{
+.program-form__main-info-and-program-choice-wrapper {
+  @include desktop {
     display: flex;
   }
 }
 
-.program-form__contacts-wrapper{
+.program-form__contacts-wrapper {
   display: flex;
   flex-direction: column;
 }
 
-.program-form__contacts-wrapper-in{
+.program-form__contacts-wrapper-in {
   display: flex;
   flex-direction: column;
 
-  @include desktop{
+  @include desktop {
     flex-direction: row;
   }
 }
