@@ -1,12 +1,42 @@
-.additional-goods {
+/* .additional-goods {
   display: flex;
   flex-direction: column;
   width: 100%;
+} */
+
+.additional-goods__promo {
+  width: 100%;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  margin-top: 39px;
+  margin-bottom: 35px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+  text-align: center;
+}
+
+.additional-goods__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @include desktop{
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .additional-goods__list {
   list-style: none;
   padding: 0;
+
+  @include desktop {
+    width: 895px;
+  }
 }
 
 .additional-goods__item {
@@ -14,6 +44,13 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 0 38px;
+  }
+
+  @include desktop {
+    justify-content: initial;
+    flex-wrap: nowrap;
+    align-items: center;
   }
 }
 
@@ -42,20 +79,13 @@
   }
 }
 
-/* .additional-goods__price {
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 14px;
-  color: #444444;
-  text-align: right;
-
-  @include tablet{
-    font-size: 14px;
-    line-height: 14px;
-  }
-} */
-
 .additional-goods__button {
   display: block;
   width: 100%;
+
+  @include desktop {
+    width: auto;
+    padding-left: 90px;
+    padding-right: 90px;
+  }
 }

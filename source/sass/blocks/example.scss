@@ -11,9 +11,20 @@
   }
 
   @include desktop {
-    display: flex;
-    flex-wrap: wrap;
     background-color: #f2f2f2;
+  }
+}
+
+.example__wrapper {
+  padding: 0 $mobile-padding;
+
+  @include tablet{
+    padding: 0 $tablet-padding;
+  }
+
+  @include desktop{
+    display: flex;
+    padding: 0 $desktop-padding;
   }
 }
 

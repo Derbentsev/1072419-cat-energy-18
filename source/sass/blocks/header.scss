@@ -1,20 +1,39 @@
 .header {
   outline: 1px solid yellow;
-}
-
-.header__nav {
-  outline: 1px solid red;
   box-sizing: border-box;
-  width: 320px;
   padding-top: 11px;
   padding-bottom: 11px;
   padding-left: 20px;
   padding-right: 20px;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
 
   @include tablet {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  @include desktop {
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+}
+
+.header__nav {
+  outline: 1px solid red;
+  /*   box-sizing: border-box; */
+  /*   width: 320px; */
+  /*   padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 20px;
+  padding-right: 20px; */
+  display: flex;
+  justify-content: space-between;
+  /*   margin: 0 auto; */
+
+  /*   @include tablet {
     width: 768px;
     padding-left: 30px;
     padding-right: 30px;
@@ -28,7 +47,7 @@
     padding-right: 110px;
     padding-top: 65px;
     padding-bottom: 65px;
-  }
+  } */
 }
 
 .header__navigation-list {
@@ -49,9 +68,13 @@
   text-transform: uppercase;
 }
 
-.header__page-name--white {
-  @include desktop {
-    color: white;
+.header__page-name {
+  color: #222222;
+
+  &--white {
+    @include desktop {
+      color: white;
+    }
   }
 }
 
