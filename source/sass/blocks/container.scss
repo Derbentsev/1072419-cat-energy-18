@@ -1,26 +1,26 @@
-  .container {
-    outline: 1px solid red;
-    width: 320px;
-    margin: 0 auto;
-    box-sizing: border-box;
+.container {
+  outline: 1px solid red;
+  width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  &--padding {
+    padding: 0 $mobile-padding;
+  }
+
+  @include tablet {
+    width: 768px;
 
     &--padding {
-      padding: 0 $mobile-padding;
-    }
-
-    @include tablet {
-      width: 768px;
-
-      &--padding {
-        padding: 0 $tablet-padding;
-      }
-    }
-
-    @include desktop {
-      width: 1440px;
-
-      &--padding {
-        padding: 0 $desktop-padding;
-      }
+      padding: 0 $tablet-padding;
     }
   }
+
+  @include desktop {
+    width: 1440px;
+
+    &--padding {
+      padding: 0 $desktop-padding;
+    }
+  }
+}
