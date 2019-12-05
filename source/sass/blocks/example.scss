@@ -18,11 +18,11 @@
 .example__wrapper {
   padding: 0 $mobile-padding;
 
-  @include tablet{
+  @include tablet {
     padding: 0 $tablet-padding;
   }
 
-  @include desktop{
+  @include desktop {
     display: flex;
     padding: 0 $desktop-padding;
   }

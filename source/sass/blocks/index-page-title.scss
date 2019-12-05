@@ -11,4 +11,10 @@
     font-size: 60px;
     line-height: 60px;
   }
+
+  @include desktop{
+    width: 420px;
+    margin-top: 80px;
+    margin-left: 140px;
+  }
 }

@@ -4,13 +4,13 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-/*   width: 320px; */
+  /*   width: 320px; */
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
 
   @include tablet {
-/*     width: 768px; */
+    /*     width: 768px; */
     padding-left: 30px;
     padding-right: 30px;
     flex-direction: row;
@@ -18,7 +18,7 @@
   }
 
   @include desktop {
-/*     width: 1440px; */
+    /*     width: 1440px; */
     padding-left: 30px;
     padding-right: 30px;
   }
