@@ -98,7 +98,8 @@
   line-height: 36px;
   font-weight: 400;
   margin: 0;
-  text-align: center;
+  margin-bottom: 20px;
+/*   text-align: center; */
 
   @include tablet {
     width: 420px;
