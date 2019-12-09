@@ -51,7 +51,6 @@
 
 .program-form__input::-webkit-outer-spin-button,
 .program-form__input::-webkit-inner-spin-button {
-  /*-webkit-appearance: none; */
   appearance: none;
   margin: 0;
 }
@@ -94,15 +93,23 @@
 .program-form__additional-wrapper {
   display: flex;
   flex-direction: column;
+  border: none;
 
   @include tablet {
+    width: 100%;
     flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
 .program-form__input-wrapper {
   display: flex;
   width: 100%;
+
+  @include tablet {
+    width: 50%;
+    flex-shrink: 0;
+  }
 }
 
 .program-form__comment {
@@ -126,11 +133,11 @@
   padding: 0 $mobile-padding;
 
   @include tablet {
+    flex-direction: row;
     padding: 0 $tablet-padding;
   }
 
   @include desktop {
-    flex-direction: row;
     padding: 0 $desktop-padding;
   }
 }

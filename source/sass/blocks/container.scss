@@ -1,6 +1,6 @@
 .container {
   outline: 1px solid red;
-  width: $mobile-width;
+  width: 280px;
   margin: 0 auto;
   box-sizing: border-box;
 
@@ -9,7 +9,7 @@
   }
 
   @include tablet {
-    width: $tablet-width;
+    width: 708px;
 
     &--padding {
       padding: 0 $tablet-padding;
@@ -17,7 +17,7 @@
   }
 
   @include desktop {
-    width: $desktop-width;
+    width: 1220px;
 
     &--padding {
       padding: 0 $desktop-padding;

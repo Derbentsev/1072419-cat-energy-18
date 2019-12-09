@@ -12,12 +12,16 @@
   margin-bottom: 35px;
   padding-top: 30px;
   padding-bottom: 30px;
-
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: white;
   text-align: center;
+
+  @include desktop {
+    width: 245px;
+    margin: 0;
+  }
 }
 
 .additional-goods__wrapper {
@@ -27,6 +31,7 @@
   @include desktop {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 

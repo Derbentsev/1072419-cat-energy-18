@@ -3,6 +3,16 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 320px;
+  margin: auto;
+
+  @include tablet {
+    width: 768px;
+  }
+
+  @include desktop {
+    width: 1440px;
+  }
 }
 
 .contacts__cooperation {
@@ -17,7 +27,6 @@
 .contacts__block {
   display: flex;
   justify-content: space-between;
-  width: 100%;
 
   @include tablet {
     padding-left: 50px;
@@ -54,5 +63,9 @@
 .contacts__map {
   @include tablet {
     width: 767px;
+  }
+
+  @include desktop {
+    width: 100%;
   }
 }
