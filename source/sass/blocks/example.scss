@@ -27,12 +27,11 @@
   }
 }
 
-.example__wrapper-3 {
-
+.example__wrapper-three {
   @include tablet {
     display: flex;
   }
-  
+
   @include desktop {
     display: block
   }
