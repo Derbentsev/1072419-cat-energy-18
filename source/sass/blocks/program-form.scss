@@ -26,11 +26,16 @@
   line-height: 18px;
   color: #222222;
   text-transform: uppercase;
-  align-self: center;
+  /*   align-self: center; */
 
   @include tablet {
+    width: 50%;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @include desktop {
+    width: auto;
   }
 }
 
@@ -82,7 +87,12 @@
 
 .program-form__main-info-wrapper-in {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+
+  @include desktop {
+    width: 50%;
+  }
 }
 
 .program-form__program-choice-wrapper {
@@ -106,10 +116,13 @@
   display: flex;
   width: 100%;
 
-  @include tablet {
-    width: 50%;
+  /*   @include tablet {
     flex-shrink: 0;
-  }
+  } */
+
+/*   @include desktop {
+    width: 50%;
+  } */
 }
 
 .program-form__comment {
@@ -133,11 +146,11 @@
   padding: 0 $mobile-padding;
 
   @include tablet {
-    flex-direction: row;
     padding: 0 $tablet-padding;
   }
 
   @include desktop {
+    flex-direction: row;
     padding: 0 $desktop-padding;
   }
 }
