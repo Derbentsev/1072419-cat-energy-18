@@ -1,6 +1,40 @@
 .example {
-  width: 280px;
+  margin-top: 40px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   background-color: #f2f2f2;
+
+  @include tablet {
+    width: 100%;
+    background-color: transparent;
+  }
+
+  @include desktop {
+    background-color: #f2f2f2;
+  }
+}
+
+.example__wrapper {
+  padding: 0 $mobile-padding;
+
+  @include tablet {
+    padding: 0 $tablet-padding;
+  }
+
+  @include desktop {
+    display: flex;
+    padding: 0 $desktop-padding;
+  }
+}
+
+.example__wrapper-three {
+  @include tablet {
+    display: flex;
+  }
+
+  @include desktop {
+    display: block;
+  }
 }
 
 .example__text {
@@ -8,14 +42,25 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+
+  @include desktop {
+    width: 430px;
+  }
 }
 
 .example__list {
+  display: flex;
   list-style: none;
   padding: 0;
 }
 
+.example__item {
+  display: flex;
+  flex-direction: column;
+}
+
 .example__achievement-number {
+  width: 124px;
   font-size: 24px;
   line-height: 24px;
   color: #111111;
@@ -34,11 +79,33 @@
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
+  text-align: center;
+
+  @include desktop {
+    text-align: left;
+  }
+}
+
+.example__stripe {
+  display: flex;
+  justify-content: space-between;
 }
 
 .example__stripe-button {
   font-size: 16px;
   line-height: 20px;
   color: #111111;
+  background-color: transparent;
   border: none;
+  text-transform: uppercase;
+}
+
+.example__image {
+  @include tablet {
+    background-color: #f2f2f2;
+  }
+
+  @include desktop {
+    background-color: transparent;
+  }
 }

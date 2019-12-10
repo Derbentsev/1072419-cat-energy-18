@@ -5,20 +5,31 @@
   box-sizing: border-box;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  padding-top: 110px;
-  margin-top: -90px;
+  /*   padding-top: 110px; */
+  /*   margin-top: -73px; */
   z-index: -1;
 
   @include tablet {
     background-image: none;
+    padding-left: 90px;
   }
 
   @include desktop {
-    background-image: url("../img/index-background-desktop@1x.jpg");
-    width: 720px;
-    height: 720px;
-    margin-left: auto;
-    margin-top: -195px;
+    /*     margin-top: -90px; */
+    padding-left: 140px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      right: 0;
+      top: -250px;
+      width: 720px;
+      height: 700px;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
   }
 }
 
@@ -26,21 +37,22 @@
   color: white;
   font-size: 14px;
   line-height: 14px;
-  text-align: center;
   text-transform: uppercase;
   margin: 0;
+  text-align: center;
 
   @include tablet {
     color: #111111;
     font-size: 20px;
-    font-weight: 20px;
+    line-height: 20px;
+    text-align: initial;
   }
 
-  @include desktop {
+  /*   @include desktop {
     left: -400px;
     top: 200px;
     position: absolute;
-  }
+  } */
 }
 
 .program-choice__image {
@@ -52,7 +64,8 @@
   }
 
   @include desktop {
-    z-index: 1;
+    left: 700px;
+    /* z-index: 1; */
   }
 }
 
@@ -72,9 +85,31 @@
     margin-bottom: 200px;
   }
 
-  @include desktop {
+  /*   @include desktop {
     position: absolute;
     left: -400px;
     top: 220px;
+  } */
+}
+
+.program-choice__title {
+  color: white;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 20px;
+  /*   text-align: center; */
+
+  @include tablet {
+    width: 420px;
+    color: #111111;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @include desktop {
+    margin-top: 80px;
+    /*     margin-left: 140px; */
   }
 }

@@ -1,5 +1,6 @@
 .program-form {
-  width: 280px;
+  display: flex;
+  flex-direction: column;
 }
 
 .program-form__text {
@@ -7,6 +8,17 @@
   line-height: 18px;
   color: #111111;
   text-transform: uppercase;
+  padding: 0 $mobile-padding;
+
+  @include tablet {
+    font-size: 20px;
+    font-weight: 30px;
+    padding: 0 $tablet-padding;
+  }
+
+  @include desktop {
+    padding: 0 $desktop-padding;
+  }
 }
 
 .program-form__label {
@@ -14,18 +26,38 @@
   line-height: 18px;
   color: #222222;
   text-transform: uppercase;
+  /*   align-self: center; */
+
+  @include tablet {
+    width: 50%;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @include desktop {
+    width: auto;
+  }
 }
 
 .program-form__input {
-  background-color: #cdcdcd;
-  opacity: 0.5;
+  width: 100%;
+  height: 45px;
   font-size: 16px;
   line-height: 18px;
+  text-transform: uppercase;
   color: #444444;
+  border: 1px solid rgba(205, 205, 205, 0.5);
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
-.program-form__comment {
-  resize: none;
+.program-form__input::-webkit-outer-spin-button,
+.program-form__input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .program-form__footnote {
@@ -34,4 +66,91 @@
   line-height: 16px;
   color: #444444;
   text-align: center;
+
+  @include tablet {
+    width: 50%;
+  }
+}
+
+.program-form__main-info-wrapper {
+  padding: 0 $mobile-padding;
+
+  @include tablet {
+    padding: 0 $tablet-padding;
+  }
+
+  @include desktop {
+    display: flex;
+    padding: 0 $desktop-padding;
+  }
+}
+
+.program-form__main-info-wrapper-in {
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+
+  @include desktop {
+    width: 50%;
+  }
+}
+
+.program-form__program-choice-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.program-form__additional-wrapper {
+  display: flex;
+  flex-direction: column;
+  border: none;
+
+  @include tablet {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.program-form__input-wrapper {
+  display: flex;
+  width: 100%;
+
+  /*   @include tablet {
+    flex-shrink: 0;
+  } */
+
+  /*   @include desktop {
+    width: 50%;
+  } */
+}
+
+.program-form__comment {
+  width: 100%;
+  height: 150px;
+  resize: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.program-form__submit {
+  @include tablet {
+    width: 50%;
+  }
+}
+
+.program-form__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0 $mobile-padding;
+
+  @include tablet {
+    padding: 0 $tablet-padding;
+  }
+
+  @include desktop {
+    flex-direction: row;
+    padding: 0 $desktop-padding;
+  }
 }
