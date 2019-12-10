@@ -6,7 +6,9 @@
   box-sizing: border-box;
   padding-left: 20px;
   padding-right: 20px;
-  margin: 0 auto;
+  padding-top: 39px;
+  padding-bottom: 31px;
+/*   margin: 0 auto; */
 
   @include tablet {
     padding-left: 30px;
@@ -19,4 +21,35 @@
     padding-left: 0;
     padding-right: 0;
   }
+}
+
+.footer__logo-text {
+  display: block;
+  width: 128px;
+  height: 24px;
+  background-image: url("../../img/logo-footer.svg");
+  background-repeat: no-repeat;
+  align-self: center;
+
+  @include tablet {
+    align-self: auto;
+  }
+}
+
+.footer__text {
+  font-family: "Arial";
+  font-size: 16px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.footer__logo {
+  fill: #666666;
+  width: 27px;
+  height: 34px;
+}
+
+.footer__wrapper{
+  display: flex;
+  justify-content: space-between;
 }

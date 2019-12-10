@@ -29,6 +29,7 @@
 .contacts__block {
   display: flex;
   justify-content: space-between;
+  padding: 0 20px;
 
   @include tablet {
     padding-left: 50px;

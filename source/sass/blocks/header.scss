@@ -14,8 +14,8 @@
   }
 
   @include desktop {
-    padding-left: 110px;
-    padding-right: 110px;
+    padding-left: 0;
+    padding-right: 0;
     padding-top: 65px;
     padding-bottom: 65px;
   }
@@ -23,63 +23,94 @@
 
 .header__nav {
   outline: 1px solid red;
-  /*   box-sizing: border-box; */
-  /*   width: 320px; */
-  /*   padding-top: 11px;
-  padding-bottom: 11px;
-  padding-left: 20px;
-  padding-right: 20px; */
   display: flex;
   justify-content: space-between;
-  /*   margin: 0 auto; */
-
-  /*   @include tablet {
-    width: 768px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-
-  @include desktop {
-    width: 1440px;
-    padding-left: 110px;
-    padding-right: 110px;
-    padding-top: 65px;
-    padding-bottom: 65px;
-  } */
 }
 
 .header__navigation-list {
   display: none;
   list-style: none;
-  width: 500px;
+  /*   width: 500px; */
   margin: 0;
   padding: 0;
   margin-left: auto;
 
   @include tablet {
     display: flex;
+    align-items: center;
   }
 }
 
 .header__navigation-item {
   margin-left: 35px;
-  text-transform: uppercase;
 }
 
 .header__page-name {
   color: #222222;
+  text-transform: uppercase;
 
   &--white {
     @include desktop {
       color: white;
     }
   }
+
+  @include tablet {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  @include desktop {
+    font-size: 20px;
+  }
+}
+
+.header__page-name--current {
+  border-bottom: 2px solid #68b738;
+}
+
+.header__page-name--current-green {
+  border-bottom: 2px solid #68b738;
+
+  @include desktop {
+    border-bottom: 2px solid white;
+  }
+}
+
+.header__logo {
+  display: block;
+  width: 191px;
+  height: 39px;
+  background-image: url("../../img/logo-mobile.svg");
+  background-repeat: no-repeat;
+
+  @include tablet {
+    background-image: url("../../img/logo-tablet.svg");
+    width: 174px;
+    height: 59px;
+  }
+
+  @include desktop {
+    background-image: url("../../img/logo-desktop.svg");
+    width: 203px;
+    height: 60px;
+  }
 }
 
 .header__button {
+  background-color: transparent;
+  border: none;
+
   @include tablet {
     display: none;
   }
+}
+
+.header__button::before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 19px;
+  background-image: url("../../img/icon-mobile-menu.svg");
+  background-repeat: no-repeat;
 }
