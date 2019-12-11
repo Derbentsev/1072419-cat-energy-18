@@ -6,21 +6,16 @@
   box-sizing: border-box;
   margin: 0;
 
-  /*   &--padding {
-    padding: 0 $mobile-padding;
-  } */
-
   @include tablet {
     font-size: 60px;
-    /* 
-    &--padding {
-      padding: 0 $tablet-padding;
-    } */
+    &--center {
+      text-align: center;
+    }
   }
 
   @include desktop {
-    /*     &--padding {
-      padding: 0 $desktop-padding;
-    } */
+    &--center {
+      text-align: left;
+    }
   }
 }

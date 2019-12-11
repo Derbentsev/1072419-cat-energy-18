@@ -1,5 +1,9 @@
 .advantages {
   padding: 0 20px;
+
+  @include tablet {
+    padding: 0;
+  }
 }
 
 .advantages__list {
@@ -11,7 +15,6 @@
 
 .advantages__item {
   position: relative;
-  /* width: 280px; */
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -24,8 +27,7 @@
     width: 201px;
     font-size: 16px;
     line-height: 24px;
-    margin-left: 80px;
-    margin-bottom: 190px;
+    margin-bottom: 150px;
 
     &:nth-of-type(2n) {
       margin-left: 170px;
@@ -36,26 +38,32 @@
       margin-top: 200px;
     }
 
+    &:nth-last-of-type(1),
+    &:nth-last-of-type(2) {
+      margin-bottom: 50px;
+    }
+
     &:nth-of-type(2n+1) {
       margin-left: 0;
     }
   }
 
   @include desktop {
-    margin-left: 100px;
-    margin-top: 150px;
+    margin-left: 120px;
+    margin-top: 160px;
+    margin-bottom: 30px;
 
     &:nth-of-type(2n) {
-      margin-left: 100px;
+      margin-left: 120px;
     }
 
     &:nth-of-type(1),
     &:nth-of-type(2) {
-      margin-top: 150px;
+      margin-top: 160px;
     }
 
-    &:nth-of-type(2n+1) {
-      margin-left: 100px;
+    &:nth-of-type(3) {
+      margin-left: 120px;
     }
   }
 

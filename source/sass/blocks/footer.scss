@@ -8,7 +8,7 @@
   padding-right: 20px;
   padding-top: 39px;
   padding-bottom: 31px;
-/*   margin: 0 auto; */
+  /*   margin: 0 auto; */
 
   @include tablet {
     padding-left: 30px;
@@ -27,12 +27,21 @@
   display: block;
   width: 128px;
   height: 24px;
-  background-image: url("../../img/logo-footer.svg");
-  background-repeat: no-repeat;
+  /*   background-image: url("../../img/logo-footer.svg");
+  background-repeat: no-repeat; */
   align-self: center;
+  fill: #111111;
 
   @include tablet {
     align-self: auto;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 
@@ -43,13 +52,25 @@
   color: #444444;
 }
 
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  &:active>.footer__text {
+    opacity: 0.3;
+  }
+
+  &:hover>.footer__logo {
+    fill: #68b738;
+  }
+
+  &:active>.footer__logo {
+    opacity: 0.3;
+  }
+}
+
 .footer__logo {
   fill: #666666;
   width: 27px;
   height: 34px;
-}
-
-.footer__wrapper{
-  display: flex;
-  justify-content: space-between;
 }

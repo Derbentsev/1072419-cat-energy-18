@@ -2,7 +2,8 @@
   padding: 0 $mobile-padding;
 
   @include tablet {
-    padding: 0 $tablet-padding;
+    /* padding: 0 $tablet-padding; */
+    padding: 0;
   }
 
   @include desktop {
@@ -143,16 +144,30 @@
     font-size: 20px;
     line-height: 20px;
   }
-}
 
-.catalog-choice__button::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 6px;
-  right: -34px;
-  width: 24px;
-  height: 11px;
-  background-image: url("../../img/icon-right-arrow-long.svg");
-  background-repeat: no-repeat;
+  &:active {
+    color: rgba(17, 17, 17, 0.3);
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 6px;
+    right: -34px;
+    width: 25px;
+    height: 12px;
+    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:active::after {
+    width: 34px;
+    height: 12px;
+    opacity: 0.3;
+  }
+
+  &:hover::after {
+    background-image: url("../../img/icon-right-arrow-verylong.svg");
+  }
 }
