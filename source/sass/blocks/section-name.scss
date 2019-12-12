@@ -8,6 +8,7 @@
 
   @include tablet {
     font-size: 60px;
+    border-top: none;
 
     &--center {
       text-align: center;
@@ -17,6 +18,14 @@
   @include desktop {
     &--center {
       text-align: left;
+    }
+  }
+
+  &--catalog {
+    border-top: 1px solid #ededed;
+
+    @include tablet {
+      border-top: none;
     }
   }
 }

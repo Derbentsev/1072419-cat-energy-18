@@ -76,7 +76,7 @@
   height: 49px;
   top: 16px;
   left: 28px;
-  background-image: url("../../img/icon-cat-slim.svg");
+  background-image: url("../img/icon-cat-slim.svg");
 
   @include tablet {
     width: 141px;
@@ -92,7 +92,7 @@
   height: 28px;
   top: 35px;
   left: 10px;
-  background-image: url("../../img/icon-cat-pro.svg");
+  background-image: url("../img/icon-cat-pro.svg");
 
   @include tablet {
     width: 268px;
@@ -157,7 +157,7 @@
     right: -34px;
     width: 25px;
     height: 12px;
-    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
   }
 
@@ -168,6 +168,6 @@
   }
 
   &:hover::after {
-    background-image: url("../../img/icon-right-arrow-verylong.svg");
+    background-image: url("../img/icon-right-arrow-verylong.svg");
   }
 }

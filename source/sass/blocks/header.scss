@@ -1,5 +1,5 @@
 .header {
-  outline: 1px solid yellow;
+  /* outline: 1px solid yellow; */
   box-sizing: border-box;
   padding-top: 11px;
   padding-bottom: 11px;
@@ -22,7 +22,7 @@
 }
 
 .header__nav {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   display: flex;
   justify-content: space-between;
 
@@ -90,17 +90,17 @@
   display: block;
   width: 191px;
   height: 39px;
-  background-image: url("../../img/logo-mobile.svg");
+  background-image: url("../img/logo-mobile.svg");
   background-repeat: no-repeat;
 
   @include tablet {
-    background-image: url("../../img/logo-tablet.svg");
+    background-image: url("../img/logo-tablet.svg");
     width: 174px;
     height: 59px;
   }
 
   @include desktop {
-    background-image: url("../../img/logo-desktop.svg");
+    background-image: url("../img/logo-desktop.svg");
     width: 203px;
     height: 60px;
   }
@@ -128,6 +128,6 @@
   display: block;
   width: 25px;
   height: 19px;
-  background-image: url("../../img/icon-mobile-menu.svg");
+  background-image: url("../img/icon-mobile-menu.svg");
   background-repeat: no-repeat;
 }
