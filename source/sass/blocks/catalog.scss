@@ -29,7 +29,6 @@
   list-style: none;
   margin: 0 auto;
   margin-top: 30px;
-  /* width: 280px; */
   padding-left: 20px;
   padding-right: 20px;
   border-top: 1px solid #ededed;
@@ -44,27 +43,10 @@
     padding-right: 35px;
     padding-bottom: 40px;
     box-sizing: border-box;
-
-    /*     &:nth-of-type(2n) {
-      margin-left: 60px;
-    } */
   }
 
   @include desktop {
-    /*     margin-left: 80px; */
     width: 245px;
-
-    /*     &:nth-of-type(2n) {
-      margin-left: 80px;
-    }
-
-    &:nth-of-type(1) {
-      margin-left: 0;
-    }
-
-    &:nth-of-type(5) {
-      margin-left: 1px;
-    } */
   }
 }
 
@@ -88,7 +70,7 @@
   left: 145px;
   width: 31px;
   height: 31px;
-  background-image: url("../../img/icon-plus-mobile.svg");
+  background-image: url("../img/icon-plus-mobile.svg");
   opacity: 0.3;
 
   @include tablet {
@@ -96,7 +78,7 @@
     left: 125px;
     width: 61px;
     height: 61px;
-    background-image: url("../../img/icon-plus.svg");
+    background-image: url("../img/icon-plus.svg");
     opacity: 0.2;
   }
 

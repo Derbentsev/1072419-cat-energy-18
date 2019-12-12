@@ -44,7 +44,7 @@
   width: 17px;
   height: 17px;
 
-  @include desktop {
+  @include tablet {
     width: 23px;
     height: 23px;
   }
@@ -54,7 +54,7 @@
   width: 10px;
   height: 19px;
 
-  @include desktop {
+  @include tablet {
     width: 14px;
     height: 28px;
   }
