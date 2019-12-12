@@ -5,17 +5,16 @@
   box-sizing: border-box;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  /*   padding-top: 110px; */
-  /*   margin-top: -73px; */
-  z-index: -1;
+  align-items: center;
+  /* z-index: -1; */
 
   @include tablet {
     background-image: none;
     padding-left: 90px;
+    align-items: stretch;
   }
 
   @include desktop {
-    /*     margin-top: -90px; */
     padding-left: 140px;
 
     &::before {
@@ -47,12 +46,6 @@
     line-height: 20px;
     text-align: initial;
   }
-
-  /*   @include desktop {
-    left: -400px;
-    top: 200px;
-    position: absolute;
-  } */
 }
 
 .program-choice__image {
@@ -61,6 +54,8 @@
   @include tablet {
     position: absolute;
     z-index: -1;
+    bottom: 0;
+    left: 200px;
   }
 
   @include desktop {
@@ -84,12 +79,6 @@
     margin-top: 20px;
     margin-bottom: 200px;
   }
-
-  /*   @include desktop {
-    position: absolute;
-    left: -400px;
-    top: 220px;
-  } */
 }
 
 .program-choice__title {
@@ -99,7 +88,7 @@
   font-weight: 400;
   margin: 0;
   margin-bottom: 20px;
-  /*   text-align: center; */
+  text-align: center;
 
   @include tablet {
     width: 420px;
@@ -110,6 +99,6 @@
 
   @include desktop {
     margin-top: 80px;
-    /*     margin-left: 140px; */
+    text-align: left;
   }
 }

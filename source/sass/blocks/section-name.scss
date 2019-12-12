@@ -3,26 +3,29 @@
   line-height: 60px;
   font-weight: 400;
   color: #111111;
-  /*   margin: 0; */
-  /*   width: 100%; */
-  /*   padding: 0 $mobile-padding; */
   box-sizing: border-box;
-
-  &--padding {
-    padding: 0 $mobile-padding;
-  }
+  margin: 0;
 
   @include tablet {
     font-size: 60px;
+    border-top: none;
 
-    &--padding {
-      padding: 0 $tablet-padding;
+    &--center {
+      text-align: center;
     }
   }
 
   @include desktop {
-    &--padding {
-      padding: 0 $desktop-padding;
+    &--center {
+      text-align: left;
+    }
+  }
+
+  &--catalog {
+    border-top: 1px solid #ededed;
+
+    @include tablet {
+      border-top: none;
     }
   }
 }

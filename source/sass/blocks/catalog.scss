@@ -18,6 +18,7 @@
 
   @include tablet {
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -26,7 +27,11 @@
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  width: 280px;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-top: 1px solid #ededed;
 
   @include tablet {
     margin: 0;
@@ -38,23 +43,10 @@
     padding-right: 35px;
     padding-bottom: 40px;
     box-sizing: border-box;
-
-    &:nth-of-type(2n) {
-      margin-left: 60px;
-    }
   }
 
   @include desktop {
-    margin-left: 80px;
     width: 245px;
-
-    &:nth-of-type(1) {
-      margin-left: 0;
-    }
-
-    &:nth-of-type(5) {
-      margin-left: 1px;
-    }
   }
 }
 
@@ -67,17 +59,46 @@
 .catalog__item--show-all {
   text-align: center;
   background-color: white;
-  border: 1px solid rgba(205, 205, 205, 0.5);
+  outline: 1px solid rgba(205, 205, 205, 0.5);
+}
+
+.catalog__item--show-all::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 145px;
+  width: 31px;
+  height: 31px;
+  background-image: url("../img/icon-plus-mobile.svg");
+  opacity: 0.3;
+
+  @include tablet {
+    top: 45px;
+    left: 125px;
+    width: 61px;
+    height: 61px;
+    background-image: url("../img/icon-plus.svg");
+    opacity: 0.2;
+  }
+
+  @include desktop {
+    left: 90px;
+  }
 }
 
 .catalog__item-name {
+  display: block;
   font-size: 16px;
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
+  width: 80px;
 
   @include tablet {
     font-size: 20px;
+    margin: 0 auto;
+    width: 130px;
   }
 }
 
@@ -89,9 +110,17 @@
   text-transform: uppercase;
   margin: 0 auto;
   margin-top: 50px;
+
+  @include tablet {
+    font-size: 20px;
+    margin-top: 145px;
+    margin-bottom: 20px;
+    width: 135px;
+  }
 }
 
 .catalog__intrigue {
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
   color: #444444;
@@ -100,9 +129,14 @@
 
   @include tablet {
     font-size: 16px;
+    width: 170px;
   }
 }
 
 .catalog__order-button {
   width: 100%;
+
+  @include tablet {
+    margin-top: 33px;
+  }
 }
