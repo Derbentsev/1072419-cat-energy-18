@@ -1,11 +1,34 @@
 .subsection-name {
+  position: relative;
+  max-width: 181px;
   font-size: 24px;
   line-height: 24px;
   color: #111111;
   font-weight: 400;
+  background-color: white;
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @include tablet {
     font-size: 36px;
     line-height: 36px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 13px;
+    right: -161px;
+    width: 150px;
+    height: 3px;
+    background-color: #68b738;
+    z-index: -1;
+
+    @include tablet {
+      width: 100%;
+      top: 52px;
+    }
   }
 }

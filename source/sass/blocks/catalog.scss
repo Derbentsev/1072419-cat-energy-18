@@ -59,7 +59,12 @@
 .catalog__item--show-all {
   text-align: center;
   background-color: white;
-  outline: 1px solid rgba(205, 205, 205, 0.5);
+  border-bottom: 1px solid #ededed;
+
+  @include tablet {
+    outline: 1px solid rgba(205, 205, 205, 0.5);
+    border-bottom: none;
+  }
 }
 
 .catalog__item--show-all::before {

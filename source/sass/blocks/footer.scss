@@ -50,7 +50,7 @@
 }
 
 .footer__wrapper {
-  width: 150px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -66,6 +66,10 @@
 
   &:active > .footer__logo {
     opacity: 0.3;
+  }
+
+  @include tablet {
+    width: 150px;
   }
 }
 

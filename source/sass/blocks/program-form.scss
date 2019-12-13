@@ -1,7 +1,7 @@
-.program-form {
+/* .program-form {
   display: flex;
   flex-direction: column;
-}
+} */
 
 .program-form__text {
   font-size: 14px;
@@ -11,8 +11,9 @@
   padding: 0 $mobile-padding;
 
   @include tablet {
+    width: 323px;
     font-size: 20px;
-    font-weight: 30px;
+    line-height: 30px;
     padding: 0 $tablet-padding;
   }
 
@@ -21,12 +22,13 @@
   }
 }
 
-.program-form__label {
+.program-form__label, 
+.program-form__checkbox-label {
   font-size: 16px;
   line-height: 18px;
   color: #222222;
   text-transform: uppercase;
-  /*   align-self: center; */
+  white-space: nowrap;
 
   @include tablet {
     width: 50%;
@@ -39,14 +41,24 @@
   }
 }
 
-.program-form__input {
+.program-form__label {
+  align-self: center;
+
+  @include tablet {
+    width: auto;
+  }
+}
+
+.program-form__input{
   width: 100%;
   height: 45px;
+  padding-left: 11px;
+  margin-left: 15px;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
-  border: 1px solid rgba(205, 205, 205, 0.5);
+  outline: 1px solid rgba(205, 205, 205, 0.5);
 
   @include tablet {
     font-size: 20px;
@@ -85,19 +97,25 @@
   }
 }
 
-.program-form__main-info-wrapper-in {
+/* .program-form__main-info-wrapper-in {
   display: flex;
-  /* flex-wrap: wrap; */
   flex-direction: column;
+  padding: 0 20px;
 
   @include desktop {
     width: 50%;
   }
-}
+} */
 
 .program-form__program-choice-wrapper {
   display: flex;
   flex-direction: column;
+  margin-top: 23px;
+  margin-bottom: 23px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
 }
 
 .program-form__additional-wrapper {
@@ -115,14 +133,7 @@
 .program-form__input-wrapper {
   display: flex;
   width: 100%;
-
-  /*   @include tablet {
-    flex-shrink: 0;
-  } */
-
-  /*   @include desktop {
-    width: 50%;
-  } */
+  margin-top: 15px;
 }
 
 .program-form__comment {
@@ -132,6 +143,8 @@
   text-transform: uppercase;
   font-size: 16px;
   line-height: 18px;
+  padding-left: 15px;
+  padding-top: 11px;
 }
 
 .program-form__submit {
@@ -141,6 +154,7 @@
 }
 
 .program-form__wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding: 0 $mobile-padding;
@@ -152,5 +166,34 @@
   @include desktop {
     flex-direction: row;
     padding: 0 $desktop-padding;
+  }
+}
+
+.program-form__wrapper--outline {
+  @include tablet {
+    margin-top: 72px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    outline: 1px solid #ededed;
+  }
+}
+
+.program-form__line-green {
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -46px;
+    right: 21px;
+    width: 50%;
+    height: 3px;
+    background-color: #68b738;
+    z-index: -1;
+
+    @include tablet {
+      width: 100%;
+      top: 52px;
+    }
   }
 }

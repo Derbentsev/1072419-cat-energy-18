@@ -1,43 +1,58 @@
-/* .additional-goods {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-} */
-
-.additional-goods__promo {
-  width: 100%;
-  background-image: url("../img/gift-photo-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  margin-top: 39px;
+.additional-goods {
+  position: relative;
   margin-bottom: 35px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: white;
-  text-align: center;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 34px;
+    right: 0;
+    width: 50%;
+    height: 3px;
+    background-color: #68b738;
+    z-index: -1;
+
+    @include tablet {
+      width: 100%;
+      top: 52px;
+    }
+  }
+
+  @include tablet {
+    margin-bottom: 50px;
+  }
 
   @include desktop {
-    width: 245px;
-    margin: 0;
+    margin-bottom: 70px;
   }
 }
 
 .additional-goods__wrapper {
   display: flex;
   flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include tablet {
+    padding: 0;
+  }
 
   @include desktop {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
+
+  &--inline {
+    display: inline-block;
+  }
 }
 
 .additional-goods__list {
   list-style: none;
   padding: 0;
+  margin: 0;
 
   @include desktop {
     width: 895px;
@@ -45,29 +60,67 @@
 }
 
 .additional-goods__item {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #ededed;
+
+  &:nth-of-type(1) {
+    border-top: 1px solid #ededed;
+  }
+
   @include tablet {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 0 38px;
+    padding: 0;
+    padding-left: 37px;
+    padding-right: 37px;
+    padding-top: 20px;
+    padding-bottom: 28px;
+    border-bottom: none;
+    outline: 1px solid #ededed;
+
+    &:nth-of-type(1) {
+      border-top: none
+    }
   }
 
   @include desktop {
     justify-content: initial;
     flex-wrap: nowrap;
     align-items: center;
+    outline: none;
+    padding: 0;
+    border-bottom: 1px solid #ededed;
+
+    &:nth-of-type(1) {
+      border-top: 1px solid #ededed;
+    }
   }
 }
 
 .additional-goods__name {
+  width: 100%;
   font-size: 16px;
   line-height: 16px;
   color: #222222;
   text-transform: uppercase;
 
   @include tablet {
+    width: auto;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @include desktop {
+    width: 245px;
+  }
+}
+
+.additional-goods__description {
+  display: flex;
+  justify-content: space-between;
+
+  @include tablet {
+    width: 200px;
   }
 }
 
@@ -84,6 +137,33 @@
   }
 }
 
+.additional-goods__quantity {
+  @include tablet {
+    margin-left: auto;
+  }
+
+  @include desktop {
+    margin-left: initial;
+    width: 150px;
+    text-align: left;
+  }
+}
+
+.additional-goods__price {
+  margin-left: auto;
+
+  @include tablet {
+    width: 100px;
+    text-align: right;
+    margin-left: initial;
+  }
+
+  @include desktop {
+    width: auto;
+    margin-left: 130px;
+  }
+}
+
 .additional-goods__button {
   display: block;
   width: 100%;
@@ -92,5 +172,73 @@
     width: auto;
     padding-left: 90px;
     padding-right: 90px;
+    margin-left: auto;
+  }
+}
+
+.additional-goods__promo-wrapper {
+  position: relative;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-top: 40px;
+  /* margin-bottom: 35px; */
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("../img/icon-gift.svg");
+    top: 80px;
+    left: 110px;
+    width: 56px;
+    height: 61px;
+
+    @include desktop {
+      left: 95px;
+    }
+  }
+
+  @include tablet {
+    margin: 0;
+    margin-top: 69px;
+    /* margin-bottom: 69px; */
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+  }
+
+  @include desktop {
+    margin: 0;
+    margin-left: auto;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+  }
+}
+
+.additional-goods__promo {
+  width: 159px;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+  text-align: center;
+  padding-top: 180px;
+  padding-bottom: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin: 0;
+
+  @include tablet {
+    width: 159px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    padding-left: 350px;
+    padding-right: 125px;
+  }
+
+  @include desktop {
+    margin: 0;
+    padding-top: 155px;
+    padding-bottom: 35px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }

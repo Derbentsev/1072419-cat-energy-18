@@ -3,6 +3,7 @@
   width: $mobile-width;
   margin: 0 auto;
   box-sizing: border-box;
+  overflow: hidden;
 
   &--padding {
     padding: 0 $mobile-padding;

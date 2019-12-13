@@ -24,12 +24,18 @@
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
+  margin: 0;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
 
 .contacts__block {
   display: flex;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 15px 25px;
 
   @include tablet {
     padding-left: 50px;
@@ -55,12 +61,31 @@
   }
 }
 
-.contacts__address {
+.contacts__address-wrapper {
+  display: flex;
+  flex-direction: column;
   width: 123px;
+
+  @include tablet {
+    width: 155px;
+  }
+}
+
+.contacts__address {
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #444444;
+  margin: 0;
+
+  @include tablet {
+    font-size: 16px;
+    text-align: right;
+
+    &--city {
+      margin-top: 15px;
+    }
+  }
 }
 
 .contacts__map {

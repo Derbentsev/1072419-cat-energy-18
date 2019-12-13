@@ -1,12 +1,17 @@
 .example {
+  width: 320px;
+  margin: auto;
   margin-top: 40px;
   padding-top: 25px;
   padding-bottom: 25px;
   background-color: #f2f2f2;
 
   @include tablet {
+    width: 768px;
+    margin-top: 100px;
     width: 100%;
     background-color: transparent;
+    border-top: 1px solid #f2f2f2;
   }
 
   @include desktop {
@@ -27,9 +32,16 @@
   }
 }
 
+.example__wrapper-two {
+  @include tablet {
+    margin-top: 50px;
+  }
+}
+
 .example__wrapper-three {
   @include tablet {
     display: flex;
+    justify-content: space-between;
   }
 
   @include desktop {
@@ -43,6 +55,11 @@
   line-height: 18px;
   color: #444444;
 
+  @include tablet {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
   @include desktop {
     width: 430px;
   }
@@ -50,28 +67,64 @@
 
 .example__list {
   display: flex;
+  justify-content: space-between;
   list-style: none;
   padding: 0;
 }
 
 .example__item {
+  width: 124px;
+  position: relative;
   display: flex;
   flex-direction: column;
+  outline: 1px solid #cdcdcd;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+
+  @include tablet {
+    width: 162px;
+
+    &:nth-of-type(1) {
+      margin-right: 42px;
+    }
+  }
 }
 
 .example__achievement-number {
-  width: 124px;
   font-size: 24px;
   line-height: 24px;
   color: #111111;
   text-transform: uppercase;
+
+  @include tablet {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__achievement {
+  width: 55px;
+  position: absolute;
+  bottom: -16px;
+  left: 34px;
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
   color: #444444;
+  background-color: #f2f2f2;
+
+  @include tablet {
+    left: 50px;
+    background-color: white;
+  }
+
+  @include desktop {
+    width: 118px;
+    left: 25px;
+    bottom: -7px;
+    background-color: #f2f2f2;
+  }
 }
 
 .example__cost {
@@ -80,6 +133,14 @@
   color: #111111;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  @include tablet {
+    width: 174px;
+    font-size: 20px;
+    text-align: right;
+  }
 
   @include desktop {
     text-align: left;
@@ -100,12 +161,13 @@
   text-transform: uppercase;
 }
 
-.example__image {
+.example__photo-wrapper {
   @include tablet {
-    background-color: #f2f2f2;
+    background: linear-gradient(to right, #f2f2f2 50%, #ebebeb 50%);
+    margin-top: 100px;
   }
 
   @include desktop {
-    background-color: transparent;
+    background: transparent;
   }
 }
