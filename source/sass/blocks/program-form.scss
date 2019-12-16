@@ -50,7 +50,7 @@
   }
 }
 
-.program-form__radio~.program-form__label {
+.program-form__radio ~ .program-form__label {
   &::before {
     content: "";
     display: block;
@@ -71,7 +71,7 @@
   }
 }
 
-.program-form__radio:checked~.program-form__label {
+.program-form__radio:checked ~ .program-form__label {
   &::after {
     content: "";
     display: block;
@@ -92,13 +92,13 @@
   }
 }
 
-.program-form__radio:hover~.program-form__label {
+.program-form__radio:hover ~ .program-form__label {
   &::before {
     border: 1px solid #bababa;
   }
 }
 
-.program-form__radio:active~.program-form__label {
+.program-form__radio:active ~ .program-form__label {
   opacity: 0.3;
 }
 
@@ -130,11 +130,11 @@
   &:focus {
     outline: 2px solid #444444;
 
-    &~.program-form__svg-mail {
+    & ~ .program-form__svg-mail {
       fill: #68b738;
     }
 
-    &~.program-form__svg-tel {
+    & ~ .program-form__svg-tel {
       fill: #68b738;
     }
   }
@@ -326,7 +326,7 @@
   }
 }
 
-.program-form__checkbox:checked~.program-form__checkbox-label {
+.program-form__checkbox:checked ~ .program-form__checkbox-label {
   &::after {
     content: "";
     position: absolute;
@@ -344,13 +344,13 @@
   }
 }
 
-.program-form__checkbox:hover~.program-form__checkbox-label {
+.program-form__checkbox:hover ~ .program-form__checkbox-label {
   &::before {
     border: 1px solid #bababa;
   }
 }
 
-.program-form__checkbox:active~.program-form__checkbox-label {
+.program-form__checkbox:active ~ .program-form__checkbox-label {
   opacity: 0.3;
 }
 
