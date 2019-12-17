@@ -16,6 +16,8 @@
   }
 
   @include desktop {
+    margin-left: 113px;
+
     &--center {
       text-align: left;
     }
@@ -25,6 +27,16 @@
     border-top: 1px solid #ededed;
 
     @include tablet {
+      border-top: none;
+    }
+  }
+
+  &--index {
+    @include tablet {
+      border-top: 1px solid #ededed;
+    }
+
+    @include desktop {
       border-top: none;
     }
   }

@@ -71,6 +71,7 @@
 
   &--current {
     border-bottom: 2px solid #68b738;
+    padding-bottom: 9px;
   }
 
   &--white {
@@ -81,6 +82,7 @@
 
   &--white.header__page-name--current {
     @include desktop {
+      padding-bottom: 9px;
       border-bottom: 2px solid white;
     }
   }

@@ -28,15 +28,29 @@
 
   @include desktop {
     display: flex;
+    flex-direction: column;
     padding: 0 $desktop-padding;
   }
 }
 
-.example__wrapper-two {
+.example__wrapper-all {
+  display: flex;
+  flex-direction: column;
+
   @include tablet {
     margin-top: 50px;
   }
+
+  @include desktop {
+    flex-direction: row;
+  }
 }
+
+/* .example__wrapper-two {
+  @include tablet {
+    margin-top: 50px;
+  }
+} */
 
 .example__wrapper-three {
   @include tablet {
@@ -50,12 +64,14 @@
 }
 
 .example__text {
+  max-width: 266px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
 
   @include tablet {
+    max-width: 676px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -107,14 +123,17 @@
   width: 55px;
   position: absolute;
   bottom: -16px;
-  left: 34px;
+  left: 18px;
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
   color: #444444;
   background-color: #f2f2f2;
+  padding-left: 16px;
+  padding-right: 17px;
 
   @include tablet {
+    width: auto;
     left: 50px;
     background-color: white;
   }
@@ -124,6 +143,14 @@
     left: 25px;
     bottom: -7px;
     background-color: #f2f2f2;
+  }
+}
+
+.example__image-after {
+  display: none;
+
+  @include tablet {
+    display: block;
   }
 }
 
@@ -143,6 +170,7 @@
   }
 
   @include desktop {
+    width: auto;
     text-align: left;
   }
 }
@@ -159,6 +187,10 @@
   background-color: transparent;
   border: none;
   text-transform: uppercase;
+
+  @include tablet {
+    border-bottom: 1px dotted #989898;
+  }
 }
 
 .example__photo-wrapper {
@@ -168,6 +200,7 @@
   }
 
   @include desktop {
+    margin-top: 0;
     background: transparent;
   }
 }

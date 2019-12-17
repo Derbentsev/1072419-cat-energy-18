@@ -18,7 +18,7 @@
   }
 
   @include desktop {
-    padding: 0 $desktop-padding;
+    padding: 0 60px;
   }
 }
 
@@ -239,7 +239,9 @@
   }
 
   @include desktop {
+    flex-direction: row;
     padding: 0 $desktop-padding;
+    margin-bottom: 82px;
   }
 }
 
@@ -335,7 +337,7 @@
     display: block;
     width: 22px;
     height: 17px;
-    background-image: url("../../img/icon-tick.svg");
+    background-image: url("../img/icon-tick.svg");
 
     @include tablet {
       top: 2px;
@@ -363,7 +365,7 @@
     width: 43%;
   }
 
-  @include tablet {
-    width: auto;
+  @include desktop {
+    width: 21%;
   }
 }

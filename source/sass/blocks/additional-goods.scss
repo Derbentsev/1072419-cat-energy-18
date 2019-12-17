@@ -2,7 +2,7 @@
   position: relative;
   margin-bottom: 35px;
 
-  &::before {
+  /*     &::before {
     content: "";
     display: block;
     position: absolute;
@@ -17,7 +17,7 @@
       width: 100%;
       top: 52px;
     }
-  }
+} */
 
   @include tablet {
     margin-bottom: 50px;
