@@ -46,7 +46,6 @@
 
   @include desktop {
     left: 700px;
-    /* z-index: 1; */
   }
 }
 
@@ -81,10 +80,10 @@
     color: #111111;
     font-size: 60px;
     line-height: 60px;
+    text-align: left;
   }
 
   @include desktop {
     margin-top: 80px;
-    text-align: left;
   }
 }

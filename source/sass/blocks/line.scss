@@ -1,7 +1,12 @@
 .line {
   position: relative;
-  top: -53px;
+  top: 45px;
   height: 3px;
   background-color: #68b738;
+  border: none;
   z-index: -1;
+
+  @include tablet {
+    top: 60px;
+  }
 }

@@ -1,12 +1,15 @@
 .section-name {
+  width: 320px;
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
   color: #111111;
   box-sizing: border-box;
+  padding-left: 22px;
   margin: 0;
 
   @include tablet {
+    width: 708px;
     font-size: 60px;
     border-top: none;
 
@@ -16,6 +19,7 @@
   }
 
   @include desktop {
+    width: 1220px;
     margin-left: 113px;
 
     &--center {

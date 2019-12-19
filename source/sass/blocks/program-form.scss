@@ -18,7 +18,7 @@
   }
 
   @include desktop {
-    padding: 0 60px;
+    padding: 0;
   }
 }
 
@@ -239,7 +239,8 @@
   }
 
   @include desktop {
-    flex-direction: row;
+    width: 100%;
+    flex-direction: column;
     padding: 0 $desktop-padding;
     margin-bottom: 82px;
   }
@@ -253,7 +254,7 @@
 
 .program-form__wrapper--info {
   @include tablet {
-    width: 50%;
+    width: 100%;
   }
 }
 

@@ -94,7 +94,8 @@
   }
 
   @include desktop {
-    width: 1440px;
+    width: 100%;
+    max-width: 1440px;
   }
 }
 
@@ -117,6 +118,6 @@
   }
 
   @include desktop {
-    left: 555px;
+    left: 1009px;
   }
 }
