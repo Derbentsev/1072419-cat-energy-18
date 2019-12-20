@@ -29,6 +29,7 @@
   }
 
   @include desktop {
+    width: 1220px;
     display: flex;
     flex-direction: column;
     padding: 0 $desktop-padding;
@@ -55,6 +56,10 @@
   }
 } */
 
+.example__image-before {
+  max-width: 100%;
+}
+
 .example__wrapper-three {
   @include tablet {
     display: flex;
@@ -80,7 +85,7 @@
   }
 
   @include desktop {
-    width: 430px;
+    width: 431px;
   }
 }
 
@@ -137,7 +142,8 @@
 
   @include tablet {
     width: auto;
-    left: 50px;
+    left: 32px;
+    bottom: -7px;
     padding-left: 8px;
     padding-right: 9px;
     background-color: white;
