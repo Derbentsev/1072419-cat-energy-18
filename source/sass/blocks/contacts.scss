@@ -7,7 +7,8 @@
   margin: auto;
 
   @include tablet {
-    width: 768px;
+    max-width: 768px;
+    width: auto;
     margin: auto;
   }
 
@@ -45,6 +46,7 @@
   }
 
   @include desktop {
+    z-index: 1;
     width: 570px;
     position: absolute;
     top: 90px;
@@ -89,9 +91,9 @@
 }
 
 .contacts__map {
-  @include tablet {
+  /* @include tablet {
     width: 767px;
-  }
+  } */
 
   @include desktop {
     width: 100%;
