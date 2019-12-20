@@ -91,9 +91,9 @@
 }
 
 .contacts__map {
-  /* @include tablet {
-    width: 767px;
-  } */
+  @include tablet {
+    width: auto;
+  }
 
   @include desktop {
     width: 100%;
@@ -115,7 +115,7 @@
   @include tablet {
     width: 113px;
     height: 106px;
-    top: 150px;
+    top: 325px;
     left: 333px;
   }
 

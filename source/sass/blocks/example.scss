@@ -50,11 +50,11 @@
   }
 }
 
-/* .example__wrapper-two {
-  @include tablet {
-    margin-top: 50px;
+.example__wrapper-two {
+  @include desktop {
+    margin-right: 19px;
   }
-} */
+}
 
 .example__image-before {
   max-width: 100%;
