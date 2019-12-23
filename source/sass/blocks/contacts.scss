@@ -92,11 +92,10 @@
 
 .contacts__map {
   @include tablet {
-    width: auto;
+    width: 100%;
   }
 
   @include desktop {
-    width: 100%;
     max-width: 1440px;
   }
 }
