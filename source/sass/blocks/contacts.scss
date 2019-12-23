@@ -7,7 +7,8 @@
   margin: auto;
 
   @include tablet {
-    width: 768px;
+    max-width: 768px;
+    width: auto;
     margin: auto;
   }
 
@@ -24,12 +25,18 @@
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
+  margin: 0;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
 
 .contacts__block {
   display: flex;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 15px 25px;
 
   @include tablet {
     padding-left: 50px;
@@ -39,6 +46,7 @@
   }
 
   @include desktop {
+    z-index: 1;
     width: 570px;
     position: absolute;
     top: 90px;
@@ -55,20 +63,62 @@
   }
 }
 
+.contacts__address-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 135px;
+
+  @include tablet {
+    width: 155px;
+  }
+}
+
 .contacts__address {
-  width: 123px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #444444;
+  margin: 0;
+
+  @include tablet {
+    font-size: 16px;
+    text-align: right;
+
+    &--city {
+      margin-top: 15px;
+    }
+  }
 }
 
 .contacts__map {
   @include tablet {
-    width: 767px;
+    width: 100%;
   }
 
   @include desktop {
-    width: 100%;
+    max-width: 1440px;
+  }
+}
+
+.contacts__map-wrapper {
+  position: relative;
+}
+
+.contacts__map-pin {
+  position: absolute;
+  top: 139px;
+  left: 136px;
+  width: 55px;
+  height: 55px;
+
+  @include tablet {
+    width: 113px;
+    height: 106px;
+    top: 150px;
+    left: 333px;
+  }
+
+  @include desktop {
+    left: 1009px;
   }
 }

@@ -1,16 +1,21 @@
 .example {
+  width: 320px;
+  margin: auto;
   margin-top: 40px;
   padding-top: 25px;
   padding-bottom: 25px;
   background-color: #f2f2f2;
 
   @include tablet {
+    /* width: 768px; */
+    margin-top: 100px;
     width: 100%;
     background-color: transparent;
+    border-top: 1px solid #f2f2f2;
   }
 
   @include desktop {
-    background-color: #f2f2f2;
+    border-top: none;
   }
 }
 
@@ -18,18 +23,47 @@
   padding: 0 $mobile-padding;
 
   @include tablet {
-    padding: 0 $tablet-padding;
+    width: 708px;
+    margin: auto;
+    padding: 0;
   }
 
   @include desktop {
+    width: 1220px;
     display: flex;
+    flex-direction: row;
     padding: 0 $desktop-padding;
   }
+}
+
+.example__wrapper-all {
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    margin-top: 50px;
+  }
+
+  @include desktop {
+    flex-direction: row;
+    background-color: #f2f2f2;
+  }
+}
+
+.example__wrapper-two {
+  @include desktop {
+    margin-right: 139px;
+  }
+}
+
+.example__image-before {
+  max-width: 100%;
 }
 
 .example__wrapper-three {
   @include tablet {
     display: flex;
+    justify-content: space-between;
   }
 
   @include desktop {
@@ -38,40 +72,107 @@
 }
 
 .example__text {
+  max-width: 366px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
 
+  @include tablet {
+    max-width: 676px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
   @include desktop {
-    width: 430px;
+    width: 431px;
   }
 }
 
 .example__list {
   display: flex;
+  justify-content: space-between;
   list-style: none;
   padding: 0;
 }
 
 .example__item {
+  width: 124px;
+  position: relative;
   display: flex;
   flex-direction: column;
+  outline: 1px solid #cdcdcd;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+
+  @include tablet {
+    width: 162px;
+
+    &:nth-of-type(1) {
+      margin-right: 42px;
+    }
+  }
 }
 
 .example__achievement-number {
-  width: 124px;
   font-size: 24px;
   line-height: 24px;
   color: #111111;
   text-transform: uppercase;
+
+  @include tablet {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__achievement {
+  width: 55px;
+  position: absolute;
+  bottom: -16px;
+  left: 18px;
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
   color: #444444;
+  background-color: #f2f2f2;
+  padding-left: 16px;
+  padding-right: 17px;
+
+  @include tablet {
+    width: auto;
+    left: 32px;
+    bottom: -7px;
+    padding-left: 8px;
+    padding-right: 9px;
+    background-color: white;
+  }
+
+  @include desktop {
+    width: auto;
+    left: 25px;
+    bottom: -7px;
+    background-color: #f2f2f2;
+  }
+}
+
+.example__item:nth-of-type(2) .example__achievement {
+  left: 18px;
+}
+
+.example__image {
+  @include tablet {
+    display: flex;
+  }
+}
+
+.example__image-after {
+  display: none;
+
+  @include tablet {
+    display: block;
+  }
 }
 
 .example__cost {
@@ -80,8 +181,17 @@
   color: #111111;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  @include tablet {
+    width: 174px;
+    font-size: 20px;
+    text-align: right;
+  }
 
   @include desktop {
+    width: auto;
     text-align: left;
   }
 }
@@ -98,14 +208,67 @@
   background-color: transparent;
   border: none;
   text-transform: uppercase;
+
+  @include tablet {
+    border-bottom: 1px dotted #989898;
+  }
 }
 
-.example__image {
+.example__photo-wrapper {
   @include tablet {
-    background-color: #f2f2f2;
+    background: linear-gradient(to right, #f2f2f2 50%, #ebebeb 50%);
+    margin-top: 100px;
   }
 
   @include desktop {
-    background-color: transparent;
+    margin-top: 0;
+    background: transparent;
+  }
+}
+
+.example__slider {
+  position: relative;
+  height: 14px;
+  width: 84px;
+  border: 1px solid #cdcdcd;
+  border-radius: 10px;
+  background-color: white;
+
+  @include tablet {
+    width: 428px;
+    height: 6px;
+    background-color: #dcdcdc;
+  }
+}
+
+.example__slider-in {
+  position: absolute;
+  top: 6px;
+  left: 4px;
+  width: 35px;
+  height: 5px;
+  background-color: #68b738;
+  border-radius: 10px;
+
+  @include tablet {
+    top: -13px;
+    left: 197px;
+    width: 34px;
+    height: 34px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 12px;
+      left: 13px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #68b738;
+    }
   }
 }

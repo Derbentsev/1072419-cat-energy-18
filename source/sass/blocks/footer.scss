@@ -1,17 +1,19 @@
 .footer {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  padding-left: 20px;
-  padding-right: 20px;
+  /* padding-left: 20px;
+  padding-right: 20px; */
   padding-top: 39px;
   padding-bottom: 31px;
 
   @include tablet {
-    padding-left: 30px;
-    padding-right: 30px;
+    /* padding-left: 30px;
+    padding-right: 30px; */
+    padding-top: 58px;
+    padding-bottom: 58px;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -23,6 +25,7 @@
 }
 
 .footer__logo-text {
+  margin: auto;
   display: block;
   width: 128px;
   height: 24px;
@@ -30,6 +33,7 @@
   fill: #111111;
 
   @include tablet {
+    margin: 0;
     align-self: auto;
   }
 
@@ -50,7 +54,7 @@
 }
 
 .footer__wrapper {
-  width: 150px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -67,10 +71,25 @@
   &:active > .footer__logo {
     opacity: 0.3;
   }
+
+  @include tablet {
+    width: 150px;
+  }
 }
 
 .footer__logo {
   fill: #666666;
   width: 27px;
   height: 34px;
+}
+
+.footer .container {
+  max-width: 280px;
+  text-align: center;
+
+  @include tablet {
+    max-width: none;
+    display: flex;
+    justify-content: space-between;
+  }
 }

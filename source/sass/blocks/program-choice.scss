@@ -6,7 +6,6 @@
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   align-items: center;
-  /* z-index: -1; */
 
   @include tablet {
     background-image: none;
@@ -16,19 +15,6 @@
 
   @include desktop {
     padding-left: 140px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      display: block;
-      right: 0;
-      top: -250px;
-      width: 720px;
-      height: 700px;
-      background-image: url("../img/index-background-desktop@1x.jpg");
-      background-repeat: no-repeat;
-      z-index: -1;
-    }
   }
 }
 
@@ -60,7 +46,6 @@
 
   @include desktop {
     left: 700px;
-    /* z-index: 1; */
   }
 }
 
@@ -95,10 +80,10 @@
     color: #111111;
     font-size: 60px;
     line-height: 60px;
+    text-align: left;
   }
 
   @include desktop {
     margin-top: 80px;
-    text-align: left;
   }
 }
