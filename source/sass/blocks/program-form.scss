@@ -258,6 +258,10 @@
     box-sizing: border-box;
     width: 100%;
   }
+
+  @include desktop {
+    padding-right: 80px;
+  }
 }
 
 .program-form__wrapper--outline {
