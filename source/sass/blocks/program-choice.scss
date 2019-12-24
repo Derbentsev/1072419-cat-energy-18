@@ -7,9 +7,15 @@
   background-repeat: no-repeat;
   align-items: center;
 
+  @include retina {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: contain;
+  }
+
   @include tablet {
     background-image: none;
     padding-left: 90px;
+    padding-bottom: 529px;
     align-items: stretch;
   }
 
@@ -35,17 +41,24 @@
 }
 
 .program-choice__image {
+  width: 280px;
+  height: 270px;
   margin-top: 10px;
 
   @include tablet {
     position: absolute;
     z-index: -1;
-    bottom: 0;
-    left: 200px;
+    bottom: -19px;
+    left: 0;
+    width: 709px;
+    height: 609px;
   }
 
   @include desktop {
-    left: 700px;
+    width: 552px;
+    height: 499px;
+    top: 0;
+    left: 450px;
   }
 }
 
@@ -62,7 +75,7 @@
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 20px;
-    margin-bottom: 200px;
+    /* margin-bottom: 200px; */
   }
 }
 

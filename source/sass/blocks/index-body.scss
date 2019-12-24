@@ -13,6 +13,11 @@
       background-color: #65a93c;
       background-position-x: right;
       z-index: -1;
+
+      @include retina {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+        background-size: cover;
+      }
     }
   }
 }

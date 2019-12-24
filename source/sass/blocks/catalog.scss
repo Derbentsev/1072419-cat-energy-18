@@ -3,6 +3,7 @@
   width: 140px;
 
   @include tablet {
+    padding-top: 165px;
     margin: 0 auto;
     width: 100%;
     text-align: center;
@@ -50,9 +51,26 @@
   }
 }
 
-.catalog__image {
+.catalog__link {
   @include tablet {
     margin: 0 auto;
+  }
+}
+
+.catalog__image {
+  width: 140px;
+  height: 144px;
+
+  @include tablet {
+    top: 0;
+    left: 70px;
+    width: 195px;
+    height: auto;
+    position: absolute;
+  }
+
+  @include desktop {
+    left: 30px;
   }
 }
 
