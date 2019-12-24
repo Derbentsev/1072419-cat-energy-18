@@ -10,6 +10,8 @@
   /* border-top: 1px solid #ededed; */
 
   @include tablet {
+    padding-left: 32px;
+    max-width: 768px;
     width: 708px;
     font-size: 60px;
     border-top: none;

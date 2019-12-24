@@ -3,8 +3,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 320px;
+  width: 100%;
   margin: auto;
+  background-color: #f2f2f2;
 
   @include tablet {
     max-width: 768px;
@@ -39,8 +40,11 @@
   padding: 15px 25px;
 
   @include tablet {
-    padding-left: 50px;
-    padding-right: 50px;
+    width: 100%;
+    max-width: 630px;
+    margin: auto;
+    padding-left: 0;
+    padding-right: 0;
     padding-top: 50px;
     padding-bottom: 50px;
   }
@@ -55,13 +59,13 @@
   }
 }
 
-.contacts__block--grey {
+/* .contacts__block--grey {
   background-color: #f2f2f2;
 
   @include desktop {
     background-color: white;
   }
-}
+} */
 
 .contacts__address-wrapper {
   display: flex;
