@@ -114,6 +114,11 @@
   max-width: 320px;
   margin: auto;
   position: relative;
+
+  @include desktop {
+    max-width: none;
+    width: 100%;
+  }
 }
 
 .contacts__map-pin {
