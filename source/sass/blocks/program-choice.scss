@@ -15,12 +15,13 @@
   @include tablet {
     background-image: none;
     padding-left: 90px;
-    padding-bottom: 262px;
+    padding-bottom: 529px;
     align-items: stretch;
   }
 
   @include desktop {
     padding-left: 140px;
+    padding-bottom: 262px;
   }
 }
 

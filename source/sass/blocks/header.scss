@@ -35,10 +35,16 @@
 }
 
 .header .container {
-  max-width: 768px;
+  max-width: 320px;
   width: auto;
-  padding-left: 29px;
-  padding-right: 31px;
+  padding-left: 20px;
+  padding-right: 19px;
+
+  @include tablet {
+    max-width: 768px;
+    padding-left: 29px;
+    padding-right: 31px;
+  }
 }
 
 .header__nav {
