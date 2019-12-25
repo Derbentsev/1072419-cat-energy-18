@@ -62,7 +62,8 @@
   height: 144px;
 
   @include tablet {
-    top: -45px;
+    /* top: -45px; */
+    bottom: 274px;
     left: 70px;
     width: auto;
     height: auto;

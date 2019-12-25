@@ -23,12 +23,22 @@
   }
 
   &--border-bottom {
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
     border-bottom: 1px solid #f2f2f2;
 
     @include tablet {
       border-bottom: none;
     }
   }
+}
+
+.header .container {
+  max-width: 768px;
+  width: auto;
+  padding-left: 29px;
+  padding-right: 31px;
 }
 
 .header__nav {
