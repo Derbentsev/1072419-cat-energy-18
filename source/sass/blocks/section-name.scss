@@ -22,6 +22,7 @@
   }
 
   @include desktop {
+    max-width: none;
     width: 1220px;
     margin: auto;
     padding: 0;

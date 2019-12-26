@@ -115,6 +115,11 @@
   margin: auto;
   position: relative;
 
+  @include tablet {
+    max-width: 768px;
+    width: 100%;
+  }
+
   @include desktop {
     max-width: none;
     width: 100%;
