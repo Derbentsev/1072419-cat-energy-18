@@ -56,10 +56,6 @@
   }
 }
 
-.example__image-before {
-  max-width: 100%;
-}
-
 .example__wrapper-three {
   @include tablet {
     display: flex;
@@ -164,6 +160,22 @@
 .example__image {
   @include tablet {
     display: flex;
+    justify-content: center;
+  }
+}
+
+.example__image-before {
+  max-width: 100%;
+
+  @include tablet {
+    width: 338px;
+    height: 499px;
+    object-fit: cover;
+    object-position: -2%;
+  }
+
+  @include desktop {
+    object-position: 4px;
   }
 }
 
@@ -171,7 +183,15 @@
   display: none;
 
   @include tablet {
+    width: 298px;
+    height: 517px;
+    object-fit: cover;
+    object-position: 86%;
     display: block;
+  }
+
+  @include desktop {
+    object-position: 93%;
   }
 }
 

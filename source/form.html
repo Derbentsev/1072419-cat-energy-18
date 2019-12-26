@@ -9,8 +9,8 @@
 </head>
 
 <body>
-  <div class="container">
-    <header class="header header--border-bottom">
+  <header class="header header--border-bottom">
+    <div class="container container--form">
       <nav class="header__nav">
         <a href="index.html" class="header__logo">
           <span class="visually-hidden">На главную страницу магазина</span>
@@ -30,14 +30,14 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </nav>
-    </header>
-  </div>
+    </div>
+  </header>
 
   <main class="main">
     <h1 class="visually-hidden">Страница подбора программы</h1>
     <form class="program-form" method="POST" action="https://echo.htmlacademy.ru">
-      <div class="container">
-        <h2 class="section-name">Подбор программы</h2>
+      <h2 class="section-name">Подбор программы</h2>
+      <div class="container container--form">
         <p class="program-form__text">
           Заполните анкету и мы подберем программу питания для вашего кота
         </p>
@@ -78,7 +78,7 @@
       </div>
 
       <hr class="line">
-      <div class="container">
+      <div class="container container--form">
         <h2 class="subsection-name subsection-name--contacts">Контактные данные (владельца кота)</h2>
         <div class="program-form__wrapper program-form__wrapper--contacts">
           <div class="program-form__input-wrapper">
@@ -107,18 +107,18 @@
       </div>
 
       <hr class="line">
-      <div class="container">
+      <div class="container container--form">
         <h2 class="subsection-name">Комментарий</h2>
-        <div class="program-form__wrapper container">
+        <div class="program-form__wrapper">
           <textarea class="program-form__comment" placeholder="Расскажите обо всех повадках кота"
             name="comment"></textarea>
         </div>
       </div>
 
       <hr class="line">
-      <div class="container">
+      <div class="container container--form">
         <h2 class="subsection-name">Дополнительно</h2>
-        <div class="program-form__additional-wrapper container">
+        <div class="program-form__additional-wrapper">
           <div class="program-form__checkbox-wrapper">
             <input class="visually-hidden program-form__checkbox" id="ingredient1" type="checkbox" name="ingredient"
               value="noSugar" checked>
@@ -142,11 +142,10 @@
         </div>
       </div>
 
-      <div class="program-form__wrapper container">
+      <div class="program-form__wrapper container container--form">
         <button class="btn program-form__submit" type="submit">Отправить заявку</button>
         <p class="program-form__footnote">* - Обязательное поле</p>
       </div>
-
     </form>
 
     <section class="contacts">
@@ -169,7 +168,7 @@
   </main>
 
   <footer class="footer">
-    <div class="container">
+    <div class="container container--form">
       <a href="index.html" class="footer__logo-text">
         <svg x="0px" y="0px" viewBox="0 0 128 24" xml:space="preserve">
           <g>

@@ -9,8 +9,8 @@
 </head>
 
 <body>
-  <div class="container">
-    <header class="header header--border-bottom">
+  <header class="header header--border-bottom">
+    <div class="container">
       <nav class="header__nav">
         <a href="index.html" class="header__logo">
           <span class="visually-hidden">На главную страницу магазина</span>
@@ -30,19 +30,25 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </nav>
-    </header>
-  </div>
+    </div>
+  </header>
 
   <main class="main">
-    <!-- <hr> -->
     <div class="container">
       <h1 class="section-name">Каталог продукции</h1>
       <section class="catalog">
         <h2 class="visually-hidden">Выбор товара для заказа</h2>
         <ul class="catalog__list">
           <li class="catalog__item">
-            <a class="catalog__image" href="order.html">
-              <img src="img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Фото товара">
+            <a class="catalog__link" href="order.html">
+              <picture>
+                <source media="(min-width: 1300px)"
+                  srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
+                <img class="catalog__image" src="img/chicken-small-mobile@1x.jpg"
+                  srcset="img/chicken-small-mobile@1x.jpg 2x" alt="Фото товара">
+              </picture>
             </a>
             <div class="catalog__description">
               <a class="catalog__item-name" href="order.html">
@@ -66,8 +72,15 @@
             <a class="btn catalog__order-button" href="order.html">Заказать</a>
           </li>
           <li class="catalog__item">
-            <a class="catalog__image" href="order.html">
-              <img src="img/chicken-big-mobile@1x.jpg" width="140" height="144" alt="Фото товара">
+            <a class="catalog__link" href="order.html">
+              <picture>
+                <source media="(min-width: 1300px)"
+                  srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
+                <img class="catalog__image" src="img/chicken-big-mobile@1x.jpg"
+                  srcset="img/chicken-big-mobile@2x.jpg 2x" alt="Фото товара">
+              </picture>
             </a>
             <div class="catalog__description">
               <a class="catalog__item-name" href="order.html">
@@ -91,8 +104,15 @@
             <a class="btn catalog__order-button" href="order.html">Заказать</a>
           </li>
           <li class="catalog__item">
-            <a class="catalog__image" href="order.html">
-              <img src="img/fish-small-mobile@1x.jpg" width="140" height="144" alt="Фото товара">
+            <a class="catalog__link" href="order.html">
+              <picture>
+                <source media="(min-width: 1300px)"
+                  srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
+                <img class="catalog__image" src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg 2x"
+                  alt="Фото товара">
+              </picture>
             </a>
             <div class="catalog__description">
               <a class="catalog__item-name" href="order.html">
@@ -116,8 +136,15 @@
             <a class="btn catalog__order-button" href="order.html">Заказать</a>
           </li>
           <li class="catalog__item">
-            <a class="catalog__image" href="order.html">
-              <img src="img/fish-big-mobile@1x.jpg" width="140" height="144" alt="Фото товара">
+            <a class="catalog__link" href="order.html">
+              <picture>
+                <source media="(min-width: 1300px)"
+                  srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x">
+                <img class="catalog__image" src="img/fish-big-mobile@1x.jpg" srcset="img/fish-big-mobile@2x.jpg 2x"
+                  alt="Фото товара">
+              </picture>
             </a>
             <div class="catalog__description">
               <a class="catalog__item-name" href="order.html">
@@ -141,8 +168,15 @@
             <a class="btn catalog__order-button" href="order.html">Заказать</a>
           </li>
           <li class="catalog__item">
-            <a class="catalog__image" href="order.html">
-              <img src="img/buckwheat-small-mobile@1x.jpg" width="140" height="144" alt="Фото товара">
+            <a class="catalog__link" href="order.html">
+              <picture>
+                <source media="(min-width: 1300px)"
+                  srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x">
+                <img class="catalog__image" src="img/buckwheat-small-mobile@1x.jpg"
+                  srcset="img/buckwheat-small-mobile@2x.jpg 2x" alt="Фото товара">
+              </picture>
             </a>
             <div class="catalog__description">
               <a class="catalog__item-name">
@@ -166,8 +200,15 @@
             <a class="btn catalog__order-button" href="order.html">Заказать</a>
           </li>
           <li class="catalog__item">
-            <a class="catalog__image" href="order.html">
-              <img src="img/buckwheat-big-mobile@1x.jpg" width="140" height="144" alt="Фото товара">
+            <a class="catalog__link" href="order.html">
+              <picture>
+                <source media="(min-width: 1300px)"
+                  srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
+                <img class="catalog__image" src="img/buckwheat-big-mobile@1x.jpg"
+                  srcset="img/buckwheat-big-mobile@2x.jpg 2x" alt="Фото товара">
+              </picture>
             </a>
             <div class="catalog__description">
               <a class="catalog__item-name" href="order.html">
@@ -191,8 +232,15 @@
             <a class="btn catalog__order-button" href="order.html">Заказать</a>
           </li>
           <li class="catalog__item">
-            <a class="catalog__image" href="order.html">
-              <img src="img/rice-small-mobile@1x.jpg" width="140" height="144" alt="Фото товара">
+            <a class="catalog__link" href="order.html">
+              <picture>
+                <source media="(min-width: 1300px)"
+                  srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
+                <img class="catalog__image" src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x"
+                  alt="Фото товара">
+              </picture>
             </a>
             <div class="catalog__description">
               <a class="catalog__item-name" href="order.html">

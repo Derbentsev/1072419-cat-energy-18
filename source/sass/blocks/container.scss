@@ -5,10 +5,6 @@
   box-sizing: border-box;
   /* overflow: hidden; */
 
-  &--padding {
-    padding: 0 $mobile-padding;
-  }
-
   @include tablet {
     width: 708px;
 
@@ -22,6 +18,20 @@
 
     &--padding {
       padding: 0 $desktop-padding;
+    }
+  }
+
+  &--padding {
+    padding: 0 $mobile-padding;
+  }
+
+  &--form {
+    @include tablet {
+      width: 630px;
+    }
+
+    @include desktop {
+      width: 1220px;
     }
   }
 }
