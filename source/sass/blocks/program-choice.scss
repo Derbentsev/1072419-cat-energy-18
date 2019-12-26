@@ -5,6 +5,7 @@
   box-sizing: border-box;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
+  /* background-color: #68b738; */
   align-items: center;
 
   @include retina {
@@ -12,11 +13,25 @@
     background-size: contain;
   }
 
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 305px;
+    background-color: #68b738;
+    z-index: -1;
+  }
+
   @include tablet {
     background-image: none;
-    padding-left: 90px;
+    padding-left: 84px;
     padding-bottom: 529px;
     align-items: stretch;
+
+    &::before {
+      content: none;
+    }
   }
 
   @include desktop {
@@ -75,7 +90,7 @@
     line-height: 20px;
     padding-left: 20px;
     padding-right: 20px;
-    margin-top: 20px;
+    margin-top: 53px;
     /* margin-bottom: 200px; */
   }
 }
@@ -99,5 +114,6 @@
 
   @include desktop {
     margin-top: 80px;
+    margin-bottom: 33px;
   }
 }
