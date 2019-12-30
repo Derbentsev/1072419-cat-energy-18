@@ -19,7 +19,7 @@
     position: absolute;
     width: 100vw;
     height: 305px;
-    background-color: #68b738;
+    background-color: #65a93c;
     z-index: -1;
   }
 
@@ -35,7 +35,7 @@
   }
 
   @include desktop {
-    padding-left: 140px;
+    padding-left: 84px;
     padding-bottom: 262px;
   }
 }
