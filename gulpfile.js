@@ -103,8 +103,8 @@ gulp.task("refresh", function(done) {
 gulp.task("build", gulp.series(
   "clean",
   "copy",
-  "css", 
-  "sprite", 
+  "css",
+  "sprite",
   "html"
   ));
 
