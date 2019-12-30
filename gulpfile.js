@@ -1,7 +1,7 @@
 "use strict";
 
 var gulp = require("gulp");
-var del = require("clean");
+var del = require("del");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var plumber = require("gulp-plumber");
@@ -11,6 +11,9 @@ var sass = require("gulp-sass");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var csso = require("gulp-csso");
+var svgstore = require("gulp-svgstore");
+var posthtml = require("gulp-posthtml");
+var include = require("posthtml-include");
 var server = require("browser-sync").create();
 
 gulp.task("copy", function() {
