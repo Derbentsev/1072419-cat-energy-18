@@ -18,7 +18,7 @@ var server = require("browser-sync").create();
 
 gulp.task("copy", function() {
   return gulp.src([
-    "soutce/fonts/**/*.{woff,woff2}",
+    "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "source/js/**",
     "source/*.ico"
