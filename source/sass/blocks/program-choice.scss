@@ -18,8 +18,8 @@
     content: "";
     display: block;
     position: absolute;
-    top: 1px;
-    width: 100vw;
+    /* top: 1px; */
+    width: calc(100vw - 17px);
     height: 305px;
     background-color: #65a93c;
     z-index: -1;
@@ -39,7 +39,7 @@
 
   @include desktop {
     padding-top: 52px;
-    padding-left: 87px;
+    padding-left: 80px;
     padding-bottom: 165px;
   }
 }

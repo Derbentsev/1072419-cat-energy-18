@@ -76,7 +76,11 @@
 }
 
 .header__navigation-item {
-  margin-left: 31px;
+  margin-left: 35px;
+
+  @include desktop {
+    margin-left: 30px;
+  }
 }
 
 .header__page-name {
