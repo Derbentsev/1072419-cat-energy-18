@@ -5,12 +5,13 @@
   font-weight: 400;
   color: #111111;
   box-sizing: border-box;
-  padding-left: 22px;
-  margin: auto;
+  margin: 0;
+  /* padding-left: 22px; */
+  /* margin: auto; */
   /* border-top: 1px solid #ededed; */
 
   @include tablet {
-    padding-left: 32px;
+    /* padding-left: 32px; */
     max-width: 768px;
     width: 708px;
     font-size: 60px;
