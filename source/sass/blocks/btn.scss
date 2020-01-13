@@ -7,6 +7,16 @@
   text-transform: uppercase;
   border: none;
 
+  @include tablet {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  @include desktop {
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+
   &:hover {
     background-color: #5eaa2f;
   }
@@ -19,8 +29,8 @@
     width: 100%;
     color: #444444;
     background-color: #f2f2f2;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 22px;
+    margin-bottom: 22px;
 
     &:hover {
       background-color: #ebebeb;
@@ -34,10 +44,5 @@
       margin-top: auto;
       margin-bottom: 0;
     }
-  }
-
-  @include tablet {
-    padding-top: 14px;
-    padding-bottom: 14px;
   }
 }

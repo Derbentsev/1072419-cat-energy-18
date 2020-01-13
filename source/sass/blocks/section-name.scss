@@ -34,10 +34,11 @@
   }
 
   &--catalog {
-    border-top: 1px solid #ededed;
+    margin-top: 16px;
+    margin-left: 20px;
 
     @include tablet {
-      border-top: none;
+      margin-left: 0;
     }
   }
 

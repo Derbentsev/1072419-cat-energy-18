@@ -59,7 +59,20 @@
   @include desktop {
     width: 1220px;
     /* flex-direction: row; */
-    /* background-color: #f2f2f2; */
+    background-color: #f2f2f2;
+    position: relative;
+  }
+}
+
+.example__wrapper-all::before {
+  @include desktop {
+    content: "";
+    display: block;
+    height: 135px;
+    width: 100%;
+    background: white;
+    position: absolute;
+    top: 0;
   }
 }
 
@@ -67,6 +80,7 @@
   width: 280px;
 
   @include tablet {
+    position: relative;
     width: auto;
   }
 }
@@ -220,6 +234,10 @@
   }
 }
 
+.example__image picture:first-child {
+  width: 372px;
+}
+
 .example__image-before {
   max-width: 100%;
 
@@ -231,9 +249,11 @@
   }
 
   @include desktop {
-    object-position: -5px;
-    /* margin-top: -172px;
-    margin-bottom: 48px; */
+    width: 372px;
+    height: 517px;
+    object-position: 9px;
+    margin-top: -15px;
+    /* margin-bottom: 48px; */
   }
 }
 
@@ -250,7 +270,8 @@
 
   @include desktop {
     object-position: 93%;
-    /* margin-top: -190px; */
+    margin-top: -14px;
+    margin-right: -33px;
   }
 }
 
@@ -321,6 +342,19 @@
   }
 }
 
+.example__stripe-button:first-child {
+  @include desktop {
+    margin-left: 35px;
+  }
+}
+
+.example__stripe-button:last-child {
+  @include desktop {
+    position: relative;
+    right: -36px;
+  }
+}
+
 .example__photo-wrapper {
   @include tablet {
     background: linear-gradient(to right, #f2f2f2 50%, #ebebeb 50%);
@@ -348,6 +382,7 @@
     border: none;
     width: 428px;
     height: 6px;
+    left: 19px;
     background-color: #dcdcdc;
   }
 

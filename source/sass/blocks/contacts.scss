@@ -52,7 +52,7 @@
   @include tablet {
     width: 100%;
     max-width: 768px;
-    margin: 0;
+    margin: auto;
     padding-left: 72px;
     padding-right: 72px;
     padding-top: 37px;
@@ -61,10 +61,12 @@
 
   @include desktop {
     z-index: 1;
+    height: 201px;
     width: 570px;
     position: absolute;
-    top: 90px;
-    left: 50px;
+    top: 95px;
+    left: 41px;
+    padding-top: 64px;
     padding-left: 76px;
     box-sizing: border-box;
     padding-right: 90px;
@@ -99,15 +101,26 @@
   @include tablet {
     font-size: 16px;
     text-align: right;
+  }
 
-    &--city {
+  @include desktop {
+    text-align: left;
+  }
+
+  &--city {
+    @include tablet {
       margin-top: 15px;
+    }
+
+    @include desktop {
+      text-align: left;
     }
   }
 }
 
 .contacts__map {
   @include tablet {
+    height: 400px;
     width: 100%;
   }
 
@@ -123,12 +136,13 @@
 
   @include tablet {
     max-width: 768px;
-    height: 400px;
+    /* height: 400px; */
     width: 100%;
     margin-top: 23px;
   }
 
   @include desktop {
+    margin-top: 0;
     max-width: none;
     width: 100%;
   }
@@ -149,6 +163,6 @@
   }
 
   @include desktop {
-    left: 1009px;
+    left: 933px;
   }
 }

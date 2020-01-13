@@ -1,12 +1,20 @@
+.catalog {
+  margin-top: 5px;
+}
+
 .catalog__description {
-  margin-top: 35px;
+  /* margin-top: 35px; */
   width: 140px;
 
   @include tablet {
-    padding-top: 165px;
+    padding-top: 168px;
     margin: 0 auto;
     width: 100%;
     text-align: center;
+  }
+
+  @include desktop {
+    padding-top: 173px;
   }
 }
 
@@ -20,6 +28,7 @@
   @include tablet {
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 15px;
   }
 }
 
@@ -29,7 +38,8 @@
   flex-wrap: wrap;
   list-style: none;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 23px;
+  padding-top: 22px;
   padding-left: 20px;
   padding-right: 20px;
   border-top: 1px solid #ededed;
@@ -37,10 +47,10 @@
   @include tablet {
     margin: 0;
     background-color: #f2f2f2;
-    margin-top: 140px;
+    margin-top: 135px;
     width: 324px;
     flex-direction: column;
-    padding-left: 35px;
+    padding-left: 39px;
     padding-right: 35px;
     padding-bottom: 40px;
     box-sizing: border-box;
@@ -57,13 +67,21 @@
   }
 }
 
+.catalog__item:nth-of-type(2n+1) .catalog__link {
+  margin-top: -22px;
+}
+
+.catalog__item:nth-of-type(2n) .catalog__link {
+  margin-top: -24px;
+}
+
 .catalog__image {
   width: 140px;
   height: 144px;
 
   @include tablet {
     /* top: -45px; */
-    bottom: 274px;
+    bottom: 308px;
     left: 70px;
     width: auto;
     height: auto;
@@ -79,6 +97,7 @@
   text-align: center;
   background-color: white;
   border-bottom: 1px solid #ededed;
+  padding-top: 29px;
 
   @include tablet {
     outline: 1px solid rgba(205, 205, 205, 0.5);
@@ -91,7 +110,7 @@
   content: "";
   display: block;
   position: absolute;
-  top: 10px;
+  top: 24px;
   left: 145px;
   width: 31px;
   height: 31px;
@@ -99,8 +118,8 @@
   opacity: 0.3;
 
   @include tablet {
-    top: 45px;
-    left: 125px;
+    top: 55px;
+    left: 132px;
     width: 61px;
     height: 61px;
     background-image: url("../img/icon-plus.svg");
@@ -119,6 +138,7 @@
   color: #111111;
   text-transform: uppercase;
   width: 80px;
+  margin-bottom: 12px;
 
   @include tablet {
     font-size: 20px;
@@ -135,12 +155,17 @@
   text-transform: uppercase;
   margin: 0 auto;
   margin-top: 50px;
+  margin-bottom: 7px;
 
   @include tablet {
     font-size: 20px;
     margin-top: 145px;
     margin-bottom: 20px;
     width: 135px;
+  }
+
+  @include desktop {
+    margin-bottom: 25px;
   }
 }
 
@@ -163,5 +188,9 @@
 
   @include tablet {
     margin-top: 33px;
+  }
+
+  @include desktop {
+    margin-top: 38px;
   }
 }
