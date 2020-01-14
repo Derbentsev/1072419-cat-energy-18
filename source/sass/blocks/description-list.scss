@@ -18,6 +18,10 @@
   }
 }
 
+.description-list__item:last-child .description-list__text--right {
+  text-transform: uppercase;
+}
+
 .description-list__text {
   font-family: "Arial", sans-serif;
   font-size: 12px;

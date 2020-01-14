@@ -14,11 +14,14 @@
   @include tablet {
     font-size: 36px;
     line-height: 36px;
-    margin-left: -20px;
+    margin-left: -2px;
+    padding-left: 39px;
+    padding-right: 37px;
   }
 
   @include desktop {
-    margin-left: -20px;
+    margin-left: -41px;
+    padding-top: 17px;
   }
 
   &--contacts {

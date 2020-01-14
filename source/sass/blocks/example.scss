@@ -57,7 +57,7 @@
   }
 
   @include desktop {
-    width: 1220px;
+    /* width: 1220px; */
     /* flex-direction: row; */
     background-color: #f2f2f2;
     position: relative;
@@ -242,10 +242,10 @@
   max-width: 100%;
 
   @include tablet {
-    width: 338px;
-    height: 499px;
+    width: 371px;
+    height: 514px;
     object-fit: cover;
-    object-position: -2%;
+    object-position: -11%;
   }
 
   @include desktop {
@@ -261,10 +261,10 @@
   display: none;
 
   @include tablet {
-    width: 298px;
+    width: 337px;
     height: 517px;
     object-fit: cover;
-    object-position: 86%;
+    object-position: 96%;
     display: block;
   }
 
@@ -324,6 +324,10 @@
     width: 581px;
     margin: auto;
     margin-top: 18px;
+  }
+
+  @include desktop {
+    margin-top: 41px;
   }
 }
 
