@@ -148,11 +148,11 @@
 
 .additional-goods__price {
   margin-left: auto;
+  text-transform: uppercase;
 
   @include tablet {
     width: 100px;
     text-align: right;
-    text-transform: uppercase;
     margin: 0;
     margin-left: initial;
   }
