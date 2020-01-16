@@ -17,19 +17,22 @@
   @include desktop {
     max-width: 1440px;
     width: auto;
+    margin-top: -13px;
   }
 }
 
 .contacts__cooperation {
-  width: 123px;
+  width: 124px;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
   margin: 0;
+  margin-right: 17px;
 
   @include tablet {
+    width: 155px;
     font-size: 20px;
     line-height: 25px;
   }
@@ -38,43 +41,48 @@
 .contacts__block {
   max-width: 320px;
   margin: auto;
-  padding-left: 19px;
-  padding-right: 25px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  box-sizing: border-box;
+  padding-left: 18px;
+  padding-right: 20px;
+  padding-top: 30px;
+  padding-bottom: 26px;
   display: flex;
   justify-content: space-between;
+  background-color: white;
 
   @include tablet {
     width: 100%;
-    max-width: 630px;
+    max-width: 768px;
     margin: auto;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-left: 72px;
+    padding-right: 72px;
+    padding-top: 66px;
+    padding-bottom: 37px;
   }
 
   @include desktop {
     z-index: 1;
+    height: 201px;
     width: 570px;
     position: absolute;
-    top: 90px;
-    left: 50px;
-    background-color: white;
+    top: 95px;
+    left: 41px;
+    padding-top: 64px;
     padding-left: 76px;
     box-sizing: border-box;
     padding-right: 90px;
   }
 }
 
-/* .contacts__block--grey {
+.contacts__block--grey {
+  position: relative;
+  z-index: 1;
   background-color: #f2f2f2;
 
   @include desktop {
     background-color: white;
   }
-} */
+}
 
 .contacts__address-wrapper {
   display: flex;
@@ -96,15 +104,28 @@
   @include tablet {
     font-size: 16px;
     text-align: right;
+  }
 
-    &--city {
+  @include desktop {
+    text-align: left;
+  }
+
+  &--city {
+    @include tablet {
       margin-top: 15px;
+    }
+
+    @include desktop {
+      text-align: left;
     }
   }
 }
 
 .contacts__map {
+  margin-top: -40px;
+
   @include tablet {
+    height: 400px;
     width: 100%;
   }
 
@@ -120,10 +141,13 @@
 
   @include tablet {
     max-width: 768px;
+    /* height: 400px; */
     width: 100%;
+    margin-top: 23px;
   }
 
   @include desktop {
+    margin-top: 0;
     max-width: none;
     width: 100%;
   }
@@ -144,6 +168,6 @@
   }
 
   @include desktop {
-    left: 1009px;
+    left: 933px;
   }
 }

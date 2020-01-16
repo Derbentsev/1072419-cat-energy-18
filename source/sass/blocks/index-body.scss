@@ -4,14 +4,14 @@
       content: "";
       position: absolute;
       display: block;
-      right: 0;
       top: 0;
+      right: 1px;
       width: 50%;
       height: 700px;
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-repeat: no-repeat;
       background-color: #65a93c;
-      background-position-x: right;
+      background-position-x: left;
       z-index: -1;
 
       @include retina {

@@ -1,8 +1,10 @@
 .advantages {
   padding: 0 20px;
+  margin-top: 19px;
 
   @include tablet {
     padding: 0;
+    margin-top: 45px;
   }
 }
 
@@ -20,27 +22,28 @@
   line-height: 18px;
   color: #444444;
   list-style: none;
-  margin-top: 16px;
+  margin-top: 28px;
   margin-left: 80px;
 
   @include tablet {
-    width: 201px;
+    width: 245px;
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 150px;
+    /* margin-bottom: 150px; */
 
     &:nth-of-type(2n) {
-      margin-left: 170px;
+      margin-left: 140px;
     }
 
     &:nth-of-type(1),
     &:nth-of-type(2) {
-      margin-top: 200px;
+      margin-top: 184px;
     }
 
     &:nth-last-of-type(1),
     &:nth-last-of-type(2) {
-      margin-bottom: 50px;
+      margin-top: 245px;
+      /* margin-bottom: 50px; */
     }
 
     &:nth-of-type(2n+1) {
@@ -53,29 +56,30 @@
     margin-top: 160px;
     margin-bottom: 30px;
 
-    /* &:nth-of-type(2n) {
-      margin-left: 120px;
-    } */
+    &:nth-of-type(2n) {
+      margin-left: 0;
+    }
 
     &:nth-of-type(1) {
-      margin-top: 175px;
+      margin-top: 182px;
     }
 
     &:nth-of-type(2) {
       width: 222px;
-      margin-left: 124px;
-      margin-top: 175px;
+      margin-left: 81px;
+      margin-top: 182px;
     }
 
     &:nth-of-type(3) {
       width: 204px;
-      margin-left: 105px;
-      margin-top: 175px;
+      margin-left: 101px;
+      margin-top: 182px;
     }
 
-    .advantages__item:nth-of-type(4) {
-      width: 244px;
-      margin-top: 175px;
+    &:nth-of-type(4) {
+      width: 245px;
+      margin-top: 182px;
+      margin-left: 120px;
     }
   }
 
@@ -91,8 +95,8 @@
     background-position: 50% 50%;
 
     @include tablet {
-      left: -1px;
-      top: -95px;
+      left: 0;
+      top: -112px;
       width: 80px;
       height: 80px;
     }
@@ -142,8 +146,8 @@
       font-size: 281px;
       line-height: 281px;
       color: #f2f2f2;
-      top: -135px;
-      right: -45px;
+      top: -152px;
+      right: -4px;
       z-index: -1;
     }
   }
@@ -152,11 +156,19 @@
     @include tablet {
       content: "1";
     }
+
+    @include desktop {
+      right: 13px;
+    }
   }
 
   &:nth-of-type(2)::after {
     @include tablet {
       content: "2";
+    }
+
+    @include desktop {
+      right: -25px;
     }
   }
 
@@ -164,11 +176,19 @@
     @include tablet {
       content: "3";
     }
+
+    @include desktop {
+      right: -42px;
+    }
   }
 
   &:nth-of-type(4)::after {
     @include tablet {
       content: "4";
+    }
+
+    @include desktop {
+      right: -5px;
     }
   }
 }

@@ -1,7 +1,24 @@
 /* .program-form {
-  display: flex;
-  flex-direction: column;
-} */
+  @include tablet {
+    padding-left: 70px;
+  }
+}*/
+.program-form .line {
+  @include tablet {
+    top: 43px;
+  }
+
+  @include desktop {
+    top: 63px;
+  }
+}
+
+.program-form .subsection-name {
+  @include tablet {
+    margin-left: -40px;
+    padding-right: 43px;
+  }
+}
 
 .program-form__text {
   font-size: 14px;
@@ -9,12 +26,15 @@
   color: #111111;
   text-transform: uppercase;
   padding: 0 $mobile-padding;
+  margin-bottom: 22px;
 
   @include tablet {
     width: 323px;
     font-size: 20px;
     line-height: 30px;
     padding: 0;
+    margin-top: 58px;
+    margin-bottom: 47px;
   }
 
   /* @include desktop {
@@ -55,16 +75,16 @@
     content: "";
     display: block;
     position: absolute;
-    top: 0;
-    left: -37px;
+    top: -4px;
+    left: -46px;
     width: 30px;
     height: 30px;
     border: 1px solid #cdcdcd;
     border-radius: 50%;
 
     @include tablet {
-      top: -6px;
-      left: -44px;
+      top: -4px;
+      left: -60px;
       width: 40px;
       height: 40px;
     }
@@ -76,16 +96,16 @@
     content: "";
     display: block;
     position: absolute;
-    top: 10px;
-    left: -26px;
+    top: 6px;
+    left: -35px;
     width: 12px;
     height: 12px;
     background-color: #68b738;
     border-radius: 50%;
 
     @include tablet {
-      top: 5px;
-      left: -30px;
+      top: 7px;
+      left: -48px;
       width: 18px;
       height: 18px;
     }
@@ -103,14 +123,19 @@
 }
 
 .program-form__radio-wrapper {
-  margin-left: 30px;
-  margin-top: 20px;
+  margin-left: 45px;
+  margin-top: 23px;
+
+  @include tablet {
+    margin-top: 33px;
+    margin-left: 0;
+  }
 }
 
 .program-form__input {
   width: 100%;
-  height: 45px;
-  padding-left: 11px;
+  height: 40px;
+  padding-left: 13px;
   margin-left: 15px;
   font-size: 16px;
   line-height: 18px;
@@ -121,6 +146,11 @@
   @include tablet {
     font-size: 20px;
     line-height: 20px;
+    height: 45px;
+  }
+
+  @include desktop {
+    padding-left: 17px;
   }
 
   &:hover {
@@ -152,9 +182,13 @@
   line-height: 16px;
   color: #444444;
   text-align: center;
+  margin: 0;
+  margin-top: 21px;
 
   @include tablet {
+    font-size: 16px;
     width: 50%;
+    margin-top: 56px;
     margin-left: 61px;
     text-align: left;
   }
@@ -180,9 +214,11 @@
 .program-form__wrapper-out {
   display: flex;
   flex-direction: column;
+  margin-bottom: 16px;
 
   @include desktop {
     flex-direction: row;
+    margin-bottom: 30px;
   }
 }
 
@@ -201,11 +237,25 @@
   display: flex;
   flex-direction: column;
   border: none;
+  margin-top: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @include tablet {
     /* width: 100%; */
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 0;
+    padding-left: 58px;
+    padding-top: 22px;
+    margin-top: 46px;
+  }
+
+  @include desktop {
+    padding-top: 24px;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 38px;
   }
 }
 
@@ -213,32 +263,53 @@
   position: relative;
   display: flex;
   width: 100%;
-  margin-top: 15px;
+  margin-top: 14px;
+
+  @include tablet {
+    margin-top: 20px;
+  }
 }
 
 .program-form__comment {
-  width: 100%;
+  width: 280px;
   height: 150px;
   resize: none;
+  box-sizing: border-box;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 18px;
   padding-left: 15px;
   padding-top: 11px;
+  margin-top: 32px;
 
   @include tablet {
+    width: 631px;
+    height: 174px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 77px;
     box-sizing: border-box;
+  }
+
+  @include desktop {
+    width: 1220px;
   }
 }
 
 .program-form__submit {
+  margin-top: 42px;
+
   @include tablet {
+    font-size: 20px;
+    line-height: 20px;
     width: 50%;
     max-width: 283px;
   }
 
   @include desktop {
     max-width: 568px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
 
@@ -257,7 +328,7 @@
     width: 100%;
     padding: 0;
     flex-direction: column;
-    margin-bottom: 82px;
+    margin-bottom: 0;
   }
 }
 
@@ -265,43 +336,88 @@
   @include tablet {
     flex-direction: row;
     padding: 0;
+    margin-top: 23px;
+    margin-bottom: 75px;
   }
 
   @include desktop {
     width: 1220px;
+    margin-top: 29px;
+    margin-bottom: 83px;
   }
+}
+
+.program-form__wrapper--comments {
+  margin-top: 33px;
+  padding-bottom: 0;
 }
 
 .program-form__wrapper--contacts {
+  margin-top: 19px;
+  padding-bottom: 0;
+
+  @include tablet {
+    margin-top: 58px;
+  }
+
   @include desktop {
     box-sizing: border-box;
     flex-direction: row;
+    margin-bottom: 0;
   }
 }
 
+.program-form__wrapper--contacts .program-form__input-wrapper {
+  @include desktop {
+    width: 570px;
+  }
+}
+
+.program-form__wrapper--contacts .program-form__input-wrapper:nth-of-type(2) {
+  @include desktop {
+    margin-left: 78px;
+  }
+}
+
+.program-form__wrapper--contacts .program-form__input {
+  margin-left: 22px;
+}
+
 .program-form__wrapper--info {
+  margin-bottom: 9px;
+
   @include tablet {
+    margin-bottom: 0;
     box-sizing: border-box;
     width: 100%;
   }
 
   @include desktop {
-    padding-right: 80px;
+    width: 570px;
   }
 }
 
 .program-form__wrapper--outline {
   @include tablet {
-    margin-top: 72px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
+    margin-top: 73px;
+    margin-bottom: 39px;
+    padding-top: 0;
+    padding-bottom: 33px;
+    padding-left: 89px;
     outline: 1px solid #ededed;
   }
 
   @include desktop {
-    margin-top: 0;
+    width: 570px;
+    box-sizing: border-box;
+    margin: 0;
+    margin-top: 19px;
+    margin-left: 79px;
   }
+}
+
+.program-form__wrapper--button {
+  margin-bottom: 10px;
 }
 
 .program-form__line-green {
@@ -325,16 +441,16 @@
 
 .program-form__svg-mail {
   position: absolute;
-  top: 18px;
-  right: 5px;
+  top: 16px;
+  right: 14px;
   width: 18px;
   height: 14px;
 }
 
 .program-form__svg-tel {
   position: absolute;
-  top: 18px;
-  right: 5px;
+  top: 13px;
+  right: 12px;
   width: 21px;
   height: 21px;
 }
@@ -345,8 +461,8 @@
   &::before {
     content: "";
     position: absolute;
-    top: -5px;
-    left: -32px;
+    top: -2px;
+    left: -45px;
     display: block;
     width: 30px;
     height: 30px;
@@ -355,8 +471,8 @@
     @include tablet {
       width: 40px;
       height: 40px;
-      top: -7px;
-      left: -42px;
+      top: -4px;
+      left: -57px;
     }
   }
 }
@@ -365,16 +481,16 @@
   &::after {
     content: "";
     position: absolute;
-    top: 0;
-    left: -27px;
+    top: 4px;
+    left: -41px;
     display: block;
     width: 22px;
     height: 17px;
     background-image: url("../img/icon-tick.svg");
 
     @include tablet {
-      top: 2px;
-      left: -30px;
+      top: 7px;
+      left: -47px;
     }
   }
 }
@@ -391,14 +507,46 @@
 
 .program-form__checkbox-wrapper {
   margin-left: 45px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 23px;
+  /* margin-bottom: 20px; */
 
   @include tablet {
-    width: 42%;
+    width: 40%;
+    margin: 0;
   }
 
   @include desktop {
-    width: 21%;
+    /* width: 21%; */
+    width: 325px;
+  }
+
+  &:nth-of-type(1) {
+    @include desktop {
+      margin-left: 20px;
+    }
+  }
+
+  &:nth-of-type(4) {
+    width: auto;
+  }
+
+  &:nth-of-type(2n) {
+    @include tablet {
+      margin-left: 114px;
+    }
+
+    @include desktop {
+      margin-left: 0;
+    }
+  }
+
+  &:nth-of-type(n+3) {
+    @include tablet {
+      margin-top: 51px;
+    }
+
+    @include desktop {
+      margin-top: 0;
+    }
   }
 }
