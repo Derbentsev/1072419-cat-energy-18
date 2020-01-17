@@ -1,14 +1,14 @@
-var navMain = document.querySelector(".header__navigation-list");
+var navMain = document.querySelector(".header__nav");
 var navButton = document.querySelector(".header__button");
 
 navMain.classList.remove(".header__nav--nojs");
 
 navButton.addEventListener("click", function () {
-  if (navMain.classList.contains(".header__navigation-list--closed")) {
-    navMain.classList.remove(".header__navigation-list--closed");
-    navMain.classList.add(".header__navigation-list--opened");
+  if (navMain.classList.contains(".header__nav--closed")) {
+    navMain.classList.remove(".header__nav--closed");
+    navMain.classList.add(".header__nav--opened");
   } else {
-    navMain.classList.add(".header__navigation-list--closed");
-    navMain.classList.remove(".header__navigation-list--opened");
+    navMain.classList.add(".header__nav--closed");
+    navMain.classList.remove(".header__nav--opened");
   }
 })

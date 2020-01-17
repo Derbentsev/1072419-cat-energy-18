@@ -57,16 +57,22 @@
   display: flex;
   justify-content: space-between;
 
-  /*   &--nojs > .header__navigation-list{
+  /*     &--nojs > .header__navigation-list{
     display: none;
   } */
 }
 
 .header__navigation-list {
-  display: none;
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.header__nav > .header__navigation-list {
+  display: none;
+  /* list-style: none;
+  margin: 0;
+  padding: 0; */
   margin-left: auto;
 
   @include tablet {
@@ -75,12 +81,34 @@
   }
 }
 
+.header__nav--nojs > .header__navigation-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__nav--nojs > .header__button {
+  display: none;
+}
+
+.header__nav--nojs .header__page-name {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.header__nav--nojs .header__navigation-item {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #f2f2f2;
+}
+
+.header__nav--nojs .header__page-name--current {
+  border: none;
+} 
+
 .header__navigation-item {
   margin-left: 35px;
-
-  /* @include desktop {
-    margin-left: 30px;
-  } */
 }
 
 .header__page-name {
@@ -154,17 +182,42 @@
 .header__button {
   background-color: transparent;
   border: none;
+  position: relative;
 
   @include tablet {
     display: none;
   }
 }
 
-.header__button::before {
+.header__nav--closed > .header__button::before {
   content: "";
   display: block;
   width: 25px;
   height: 19px;
   background-image: url("../img/icon-mobile-menu.svg");
   background-repeat: no-repeat;
+}
+
+.header__nav--opened > .header__button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 1px;
+  height: 19px;
+  background-color: black;
+  transform: rotate(45deg);
+}
+
+.header__nav--opened > .header__button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 11px;
+  width: 1px;
+  height: 19px;
+  background-color: black;
+  transform: rotate(-45deg);
 }
