@@ -5,7 +5,7 @@
   justify-content: space-between;
   width: 100%;
   margin: auto;
-  margin-top: 13px;
+  margin-top: 0;
   background-color: #f2f2f2;
 
   @include tablet {
@@ -45,7 +45,7 @@
   padding-left: 18px;
   padding-right: 20px;
   padding-top: 30px;
-  padding-bottom: 26px;
+  padding-bottom: 66px;
   display: flex;
   justify-content: space-between;
   background-color: white;
@@ -56,8 +56,8 @@
     margin: auto;
     padding-left: 72px;
     padding-right: 72px;
-    padding-top: 66px;
-    padding-bottom: 37px;
+    padding-top: 39px;
+    padding-bottom: 75px;
   }
 
   @include desktop {
@@ -65,7 +65,7 @@
     height: 201px;
     width: 570px;
     position: absolute;
-    top: 95px;
+    top: 50px;
     left: 41px;
     padding-top: 64px;
     padding-left: 76px;
@@ -83,8 +83,19 @@
   padding-bottom: 26px;
   padding-left: 18px;
 
+  @include tablet {
+    padding-top: 67px;
+    padding-right: 72px;
+    padding-bottom: 70px;
+    padding-left: 70px;
+  }
+
   @include desktop {
     background-color: white;
+    padding-top: 70px;
+    padding-right: 91px;
+    padding-bottom: 70px;
+    padding-left: 74px;
   }
 }
 
@@ -167,8 +178,8 @@
   @include tablet {
     width: 113px;
     height: 106px;
-    top: 150px;
-    left: 333px;
+    top: 107px;
+    left: 327px;
   }
 
   @include desktop {
