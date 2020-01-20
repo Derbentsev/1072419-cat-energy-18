@@ -118,9 +118,11 @@
 .catalog__image {
   width: 140px;
   height: 144px;
+  margin-top: -23px;
 
   @include tablet {
     /* top: -45px; */
+    margin-top: 0;
     margin-bottom: -9px;
     bottom: 303px;
     left: 70px;

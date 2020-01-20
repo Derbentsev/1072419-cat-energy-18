@@ -9,7 +9,7 @@
 
   @include desktop {
     margin-top: 33px;
-    margin-bottom: 124px;
+    margin-bottom: 86px;
   }
 }
 
@@ -42,7 +42,7 @@
   margin: 0;
 
   @include tablet {
-    margin-top: 84px;
+    margin-top: 81px;
   }
 
   @include desktop {
@@ -64,10 +64,10 @@
 
   @include tablet {
     padding: 0;
-    padding-left: 37px;
-    padding-right: 37px;
+    padding-left: 39px;
+    padding-right: 39px;
     padding-top: 25px;
-    padding-bottom: 30px;
+    padding-bottom: 26px;
     border-bottom: none;
     outline: 1px solid #ededed;
 
@@ -168,7 +168,7 @@
   width: 100%;
 
   @include tablet {
-    margin-top: 22px;
+    margin-top: 25px;
   }
 
   @include desktop {
@@ -194,7 +194,7 @@
 
   @include tablet {
     margin: 0;
-    margin-top: 69px;
+    margin-top: 71px;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
 
     @include retina {
@@ -218,12 +218,17 @@
     display: block;
     position: absolute;
     background-image: url("../img/icon-gift.svg");
-    top: 64px;
-    left: 89px;
+    top: 68px;
+    left: 114px;
     width: 56px;
     height: 61px;
 
+    @include tablet {
+      left: 93px;
+    }
+
     @include desktop {
+      top: 64px;
       left: 95px;
     }
   }
@@ -236,7 +241,7 @@
   line-height: 20px;
   color: white;
   text-align: center;
-  padding-top: 186px;
+  padding-top: 191px;
   padding-bottom: 40px;
   padding-left: 60px;
   padding-right: 60px;
@@ -247,7 +252,7 @@
     width: 161px;
     padding-top: 71px;
     padding-right: 125px;
-    padding-bottom: 65px;
+    padding-bottom: 69px;
     padding-left: 422px;
   }
 

@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
   <link href="css/style.min.css" rel="stylesheet">
   <title>Cat Energy</title>
 </head>
@@ -80,11 +82,14 @@ C7.8,20,8.1,19.7,8.1,19.4z" />
   </svg>
 
   <header class="header header--border-bottom">
-    <div class="container container--form">
-      <nav class="header__nav">
+    <div class="container">
+      <nav class="header__nav header__nav--opened">
         <a href="index.html" class="header__logo">
           <span class="visually-hidden">На главную страницу магазина</span>
         </a>
+        <button class="header__button header__button-nojs" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <ul class="header__navigation-list">
           <li class="header__navigation-item">
             <a class="header__page-name" href="index.html">Главная</a>
@@ -96,9 +101,6 @@ C7.8,20,8.1,19.7,8.1,19.4z" />
             <a class="header__page-name header__page-name--current">Подбор программы</a>
           </li>
         </ul>
-        <button class="header__button" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
       </nav>
     </div>
   </header>
@@ -284,6 +286,7 @@ C7.8,20,8.1,19.7,8.1,19.4z" />
       </a>
     </div>
   </footer>
+  <script src="js/header-menu.js"></script>
 </body>
 
 </html>

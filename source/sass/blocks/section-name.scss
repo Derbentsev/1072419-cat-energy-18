@@ -60,7 +60,9 @@
     margin-bottom: 27px;
 
     @include tablet {
+      max-width: none;
       margin-bottom: 0;
+      margin-left: 34px;
     }
   }
 }

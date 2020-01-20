@@ -1,8 +1,11 @@
-/* .program-form {
-  @include tablet {
+.program-form {
+  margin-bottom: 12px;
+
+  /* @include tablet {
     padding-left: 70px;
-  }
-}*/
+  } */
+}
+
 .program-form .line {
   @include tablet {
     top: 43px;
@@ -147,6 +150,7 @@
     font-size: 20px;
     line-height: 20px;
     height: 45px;
+    margin-left: 19px;
   }
 
   @include desktop {
@@ -304,6 +308,8 @@
     line-height: 20px;
     width: 50%;
     max-width: 283px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 
   @include desktop {
@@ -343,7 +349,7 @@
   @include desktop {
     width: 1220px;
     margin-top: 29px;
-    margin-bottom: 83px;
+    margin-bottom: 86px;
   }
 }
 
@@ -380,7 +386,11 @@
 }
 
 .program-form__wrapper--contacts .program-form__input {
-  margin-left: 22px;
+  margin-left: 11px;
+
+  @include tablet {
+    margin-left: 18px;
+  }
 }
 
 .program-form__wrapper--info {

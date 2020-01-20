@@ -9,6 +9,7 @@
   @include tablet {
     /* width: 768px; */
     margin-top: 100px;
+    padding-bottom: 0;
     width: 100%;
     background-color: transparent;
     border-top: 1px solid #f2f2f2;
@@ -34,7 +35,7 @@
     width: 1220px;
     margin-top: 75px;
     padding-top: 68px;
-    padding-bottom: 106px;
+    padding-bottom: 73px;
     padding-left: 40px;
     display: flex;
     /* flex-direction: row; */
@@ -173,7 +174,11 @@
 }
 
 .example__item:nth-of-type(2) .example__achievement {
-  left: 10px;
+  left: 19px;
+
+  @include tablet {
+    left: 10px;
+  }
 }
 
 .example__achievement-number {
