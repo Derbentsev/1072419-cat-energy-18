@@ -7,10 +7,10 @@
   z-index: -1;
 
   @include tablet {
-    top: 80px;
+    top: 75px;
   }
 
   @include desktop {
-    top: 83px;
+    top: 103px;
   }
 }
