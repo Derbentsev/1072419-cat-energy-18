@@ -136,6 +136,8 @@
 .additional-goods__quantity {
   @include tablet {
     margin: 0;
+    margin-top: 5px;
+    margin-bottom: -5px;
     margin-left: auto;
   }
 

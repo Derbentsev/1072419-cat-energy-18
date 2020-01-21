@@ -38,7 +38,8 @@
   max-width: 320px;
   /* width: auto; */
   padding-left: 20px;
-  padding-right: 21px;
+  padding-right: 26px;
+  padding-bottom: 14px;
 
   @include tablet {
     max-width: 768px;
@@ -96,6 +97,7 @@
   @include tablet {
     display: flex;
     align-items: center;
+    margin-top: 14px;
   }
 }
 

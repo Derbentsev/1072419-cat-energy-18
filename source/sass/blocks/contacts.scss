@@ -43,7 +43,7 @@
   margin: auto;
   box-sizing: border-box;
   padding-left: 18px;
-  padding-right: 20px;
+  padding-right: 26px;
   padding-top: 30px;
   padding-bottom: 28px;
   display: flex;
@@ -141,8 +141,8 @@
 
   @include tablet {
     /* height: 400px;*/
-    width: 100%;
-    margin-top: -5px;
+    /* width: 100%; */
+    margin-top: 0;
   }
 
   @include desktop {
@@ -180,7 +180,7 @@
   @include tablet {
     width: 113px;
     height: 106px;
-    top: 143px;
+    top: 150px;
     left: 328px;
   }
 

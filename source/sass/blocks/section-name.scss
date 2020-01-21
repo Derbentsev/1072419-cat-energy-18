@@ -61,8 +61,14 @@
 
     @include tablet {
       max-width: none;
-      margin-bottom: 0;
-      margin-left: 34px;
+      margin-top: 16px;
+      margin-bottom: -3px;
+      margin-left: 29px;
+    }
+
+    @include desktop {
+      margin-top: 18px;
+      margin-left: 39px;
     }
   }
 }
