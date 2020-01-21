@@ -12,7 +12,7 @@
 
   @include tablet {
     /* padding-left: 32px; */
-    max-width: 768px;
+    max-width: none;
     width: 708px;
     font-size: 60px;
     border-top: none;
@@ -60,7 +60,15 @@
     margin-bottom: 27px;
 
     @include tablet {
-      margin-bottom: 0;
+      max-width: none;
+      margin-top: 16px;
+      margin-bottom: -3px;
+      margin-left: 29px;
+    }
+
+    @include desktop {
+      margin-top: 18px;
+      margin-left: 39px;
     }
   }
 }

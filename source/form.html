@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
   <link href="css/style.min.css" rel="stylesheet">
   <title>Cat Energy</title>
 </head>
@@ -80,11 +82,14 @@ C7.8,20,8.1,19.7,8.1,19.4z" />
   </svg>
 
   <header class="header header--border-bottom">
-    <div class="container container--form">
-      <nav class="header__nav">
+    <div class="container">
+      <nav class="header__nav header__nav--opened">
         <a href="index.html" class="header__logo">
           <span class="visually-hidden">На главную страницу магазина</span>
         </a>
+        <button class="header__button header__button-nojs" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <ul class="header__navigation-list">
           <li class="header__navigation-item">
             <a class="header__page-name" href="index.html">Главная</a>
@@ -96,9 +101,6 @@ C7.8,20,8.1,19.7,8.1,19.4z" />
             <a class="header__page-name header__page-name--current">Подбор программы</a>
           </li>
         </ul>
-        <button class="header__button" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
       </nav>
     </div>
   </header>
@@ -225,7 +227,7 @@ C7.8,20,8.1,19.7,8.1,19.4z" />
         </div>
       </div>
       <div class="contacts__map-wrapper">
-        <picture>
+        <!-- <picture>
           <source type="image/webp" media="(min-width: 1300px)"
             srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)"
@@ -237,7 +239,8 @@ C7.8,20,8.1,19.7,8.1,19.4z" />
           <img class="contacts__map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
             alt="Схема проезда">
         </picture>
-        <img class="contacts__map-pin" src="img/map-pin.png" width="55" height="53" alt="Указатель местоположения">
+        <img class="contacts__map-pin" src="img/map-pin.png" width="55" height="53" alt="Указатель местоположения"> -->
+        <iframe class="contacts__map-yandex" src="https://yandex.ru/map-widget/v1/-/CKA-BTOb" height="400" frameborder="1" allowfullscreen="true"></iframe>
       </div>
     </section>
   </main>
@@ -284,6 +287,7 @@ C7.8,20,8.1,19.7,8.1,19.4z" />
       </a>
     </div>
   </footer>
+  <script src="js/header-menu.js"></script>
 </body>
 
 </html>
