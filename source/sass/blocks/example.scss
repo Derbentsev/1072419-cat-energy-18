@@ -247,6 +247,7 @@
 
 .example__image picture:last-child {
   overflow: hidden;
+  width: 338px;
 }
 
 .example__image-before {
@@ -255,15 +256,15 @@
   @include tablet {
     /*object-fit: cover;
     object-position: -11%; */
-    width: 690px;
-    height: 514px;
+    /* width: 690px;
+    height: 514px; */
     position: relative;
     left: 31px;
   }
 
   @include desktop {
-    width: 372px;
-    height: 517px;
+    /* width: 372px;
+    height: 517px; */
     object-position: 10px;
     margin-top: -15px;
     /* margin-bottom: 48px; */
@@ -274,8 +275,8 @@
   display: none;
 
   @include tablet {
-    width: 337px;
-    height: 517px;
+    /* width: 337px;
+    height: 517px; */
     /* object-fit: cover;
     object-position: 96%; */
     display: block;
