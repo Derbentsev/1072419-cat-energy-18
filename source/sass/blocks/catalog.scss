@@ -1,14 +1,5 @@
 .catalog {
   margin-top: 5px;
-
-  @include tablet {
-    margin-top: 8px;
-    margin-bottom: 21px;
-  }
-
-  @include desktop {
-    margin-bottom: 16px;
-  }
 }
 
 .catalog__description {
@@ -16,15 +7,15 @@
   width: 140px;
 
   @include tablet {
-    /* padding-top: 164px; */
+    padding-top: 164px;
     margin: 0 auto;
     width: 100%;
     text-align: center;
   }
 
-  /* @include desktop {
+  @include desktop {
     padding-top: 163px;
-  } */
+  }
 }
 
 .catalog__list {
@@ -37,7 +28,7 @@
   @include tablet {
     flex-direction: row;
     justify-content: space-between;
-    /* padding-top: 15px; */
+    padding-top: 15px;
   }
 }
 
@@ -49,28 +40,24 @@
   margin: 0 auto;
   margin-top: 23px;
   padding-top: 22px;
-  padding-right: 20px;
   padding-left: 20px;
+  padding-right: 20px;
   border-top: 1px solid #ededed;
 
   @include tablet {
     margin: 0;
     background-color: #f2f2f2;
-    margin-top: 158px;
+    margin-top: 147px;
     width: 324px;
     flex-direction: column;
-    padding-top: 161px;
+    padding-left: 39px;
     padding-right: 35px;
     padding-bottom: 29px;
-    padding-left: 39px;
     box-sizing: border-box;
   }
 
   @include desktop {
     width: 245px;
-    padding-top: 162px;
-    padding-right: 38px;
-    padding-bottom: 38px;
   }
 }
 
@@ -100,30 +87,26 @@
   }
 }
 
-/* .catalog__item:nth-of-type(2n+1) .catalog__link {
+.catalog__item:nth-of-type(2n+1) .catalog__link {
   margin-top: -14px;
 }
 
 .catalog__item:nth-of-type(2n) .catalog__link {
   margin-top: -24px;
-} */
+}
 
 .catalog__link {
   @include tablet {
     margin: 0 auto;
-    /* margin-top: -16px; */
   }
 }
 
 .catalog__image {
   width: 140px;
   height: 144px;
-  margin-top: -23px;
 
   @include tablet {
     /* top: -45px; */
-    margin-top: 0;
-    margin-bottom: -9px;
     bottom: 303px;
     left: 70px;
     width: auto;
@@ -133,7 +116,6 @@
 
   @include desktop {
     left: 30px;
-    margin-bottom: 0;
   }
 }
 
@@ -147,7 +129,6 @@
     outline: 1px solid rgba(205, 205, 205, 0.5);
     border-bottom: none;
     border-top: none;
-    padding-top: 17px;
   }
 }
 
@@ -205,12 +186,12 @@
   @include tablet {
     font-size: 20px;
     margin-top: 145px;
-    margin-bottom: 28px;
+    margin-bottom: 20px;
     width: 135px;
   }
 
   @include desktop {
-    margin-bottom: 29px;
+    margin-bottom: 25px;
   }
 }
 
@@ -232,10 +213,10 @@
   width: 100%;
 
   @include tablet {
-    margin-top: 35px;
+    margin-top: 33px;
   }
 
   @include desktop {
-    margin-top: 33px;
+    margin-top: 38px;
   }
 }
