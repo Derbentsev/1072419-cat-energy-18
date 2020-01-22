@@ -137,8 +137,8 @@
   }
 }
 
-.program-form__input[type=number] {
-  -moz-appearance:textfield;
+.program-form__input[type="number"] {
+  appearance: textfield;
 }
 
 .program-form__input {
