@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
   <link href="css/style.min.css" rel="stylesheet">
   <script src="js/picturefill.js"></script>
   <title>Cat Energy</title>
@@ -69,10 +71,13 @@
 
   <header class="header">
     <div class="container">
-      <nav class="header__nav header__nav--nojs">
+      <nav class="header__nav header__nav--opened">
         <a href="index.html" class="header__logo">
           <span class="visually-hidden">На главную страницу магазина</span>
         </a>
+        <button class="header__button header__button-nojs" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <ul class="header__navigation-list">
           <li class="header__navigation-item">
             <a class="header__page-name header__page-name--current header__page-name--white">Главная</a>
@@ -84,9 +89,6 @@
             <a class="header__page-name header__page-name--white" href="form.html">Подбор программы</a>
           </li>
         </ul>
-        <button class="header__button" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
       </nav>
     </div>
   </header>
@@ -155,7 +157,7 @@
             функциональное питание.
           </li>
           <li class="advantages__item">
-            Уже через месяц наслаждайтесь изменениями к лучшему<br>
+            Уже через месяц наслаждайтесь изменениями к лучшему
             вашего питомца!
           </li>
         </ul>
@@ -209,7 +211,7 @@
               <picture>
                 <source type="image/webp" media="(min-width: 1300px)"
                   srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
-                <source type="image/webp" media="min-width: 768px"
+                <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
 
@@ -244,19 +246,19 @@
         </div>
       </div>
       <div class="contacts__map-wrapper">
-        <picture>
-          <source type="image/webp" media="(min-width: 1300px)"
-            srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+        <!-- <picture>
+          <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
 
           <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
           <img class="contacts__map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
-            alt="Схема проезда" width="320" height="360">
+            alt="Схема проезда">
         </picture>
-        <img class="contacts__map-pin" src="img/map-pin.png" width="55" height="53" alt="Указатель местоположения">
+          <img class="contacts__map-pin" src="img/map-pin.png" width="55" height="53" alt="Указатель местоположения"> -->
+        <iframe class="contacts__map-yandex" src="https://yandex.ru/map-widget/v1/-/CKA-BTOb" height="400"
+          frameborder="1" allowfullscreen="true"></iframe>
       </div>
     </section>
   </main>
@@ -303,6 +305,7 @@
       </a>
     </div>
   </footer>
+  <script src="js/header-menu.js"></script>
 </body>
 
 </html>
