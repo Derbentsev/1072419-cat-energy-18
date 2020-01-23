@@ -4,7 +4,7 @@
 
   @include tablet {
     padding-top: 38px;
-    margin-bottom: 109px;
+    margin-bottom: 77px;
   }
 
   @include desktop {
@@ -222,6 +222,10 @@
     left: 112px;
     width: 56px;
     height: 61px;
+
+    @include tablet {
+      left: 90px;
+    }
 
     @include desktop {
       left: 95px;
