@@ -21,6 +21,7 @@
 
   @include desktop {
     width: 1440px;
+    overflow: hidden;
     padding-right: 110px;
     padding-left: 110px;
   }

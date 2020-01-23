@@ -62,5 +62,9 @@
     @include tablet {
       margin-bottom: 0;
     }
+
+    @include desktop {
+      max-width: none;
+    }
   }
 }
