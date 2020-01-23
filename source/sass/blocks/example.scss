@@ -223,7 +223,7 @@
     bottom: -7px;
     padding-left: 8px;
     padding-right: 9px;
-    background-color: white;
+    /* background-color: white; */
     font-size: 14px;
   }
 
@@ -353,7 +353,7 @@
 .example__stripe {
   display: flex;
   justify-content: space-between;
-  margin-top: 36px;
+  margin-top: 29px;
   padding-left: 36px;
   padding-right: 31px;
 
@@ -422,14 +422,6 @@
       /* z-index: -1; */
 }
 
-@include desktop {
-  content: none;
-}
-}
-
-*/
-}
-
 .example__slider {
   position: relative;
   height: 14px;
@@ -443,12 +435,13 @@
     border: none;
     width: 428px;
     height: 6px;
-    left: 19px;
+    left: -2px;
     background-color: #dcdcdc;
   }
 
   @include desktop {
     top: 7px;
+    left: 20px;
   }
 }
 
