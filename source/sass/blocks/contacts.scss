@@ -138,23 +138,24 @@
   }
 }
 
-/* .contacts__map-wrapper {
-  max-width: 320px;
+.contacts__map-wrapper {
+  /* max-width: 320px;
   margin: auto;
-  position: relative;
+  position: relative; */
 
   @include tablet {
-    max-width: 768px;
+    /* max-width: 768px;
     width: 100%;
-    margin-top: 23px;
+    margin-top: 23px; */
+    margin-bottom: -2px;
   }
 
-  @include desktop {
+  /* @include desktop {
     margin-top: 0;
     max-width: none;
     width: 100%;
-  }
-} */
+  } */
+}
 
 .contacts__map-pin {
   position: absolute;

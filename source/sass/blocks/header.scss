@@ -185,6 +185,10 @@
     border-bottom: 2px solid #68b738;
     padding-bottom: 9px;
 
+    @include tablet {
+      padding-bottom: 6px;
+    }
+
     @include desktop {
       padding-bottom: 7px;
     }

@@ -37,9 +37,11 @@
   &--catalog {
     margin-top: 16px;
     margin-left: 20px;
+    margin-bottom: 28px;
 
     @include tablet {
       margin-left: 0;
+      margin-bottom: 28px;
     }
   }
 

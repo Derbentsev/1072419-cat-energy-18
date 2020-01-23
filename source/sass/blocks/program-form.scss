@@ -1,9 +1,14 @@
-/* .program-form {
-  @include tablet {
+.program-form {
+  margin-bottom: 12px;
+
+  /* @include tablet {
     padding-left: 70px;
-  }
-}*/
+  } */
+}
+
 .program-form .line {
+  top: 32px;
+
   @include tablet {
     top: 43px;
   }
@@ -146,13 +151,14 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
-  border: none;
   outline: 1px solid rgba(205, 205, 205, 0.5);
 
   @include tablet {
     font-size: 20px;
     line-height: 20px;
     height: 45px;
+    margin-left: 19px;
+    padding-left: 16px;
   }
 
   @include desktop {
@@ -294,6 +300,7 @@
     font-size: 20px;
     line-height: 30px;
     margin-top: 77px;
+    padding-left: 21px;
     box-sizing: border-box;
   }
 
@@ -310,6 +317,8 @@
     line-height: 20px;
     width: 50%;
     max-width: 283px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 
   @include desktop {
@@ -349,7 +358,7 @@
   @include desktop {
     width: 1220px;
     margin-top: 29px;
-    margin-bottom: 83px;
+    margin-bottom: 97px;
   }
 }
 
@@ -386,7 +395,11 @@
 }
 
 .program-form__wrapper--contacts .program-form__input {
-  margin-left: 22px;
+  margin-left: 11px;
+
+  @include tablet {
+    margin-left: 18px;
+  }
 }
 
 .program-form__wrapper--info {
