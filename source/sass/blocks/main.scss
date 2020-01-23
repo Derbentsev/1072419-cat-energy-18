@@ -1,6 +1,8 @@
-/* .main {
-  outline: 1px solid yellow;
-} */
+.main {
+  @include desktop {
+    overflow: hidden;
+  }
+}
 
 .main__container {
   display: flex;
@@ -21,7 +23,6 @@
 
   @include desktop {
     width: 1440px;
-    overflow: hidden;
     padding-right: 110px;
     padding-left: 110px;
   }
