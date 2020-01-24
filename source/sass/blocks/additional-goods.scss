@@ -8,8 +8,8 @@
   }
 
   @include desktop {
-    padding-top: 44px;
-    margin-bottom: 78px;
+    padding-top: 33px;
+    margin-bottom: 99px;
   }
 }
 
@@ -47,7 +47,7 @@
 
   @include desktop {
     width: 895px;
-    margin-top: 84px;
+    margin-top: 78px;
   }
 }
 
@@ -82,7 +82,7 @@
     align-items: center;
     outline: none;
     padding: 0;
-    padding-top: 14px;
+    padding-top: 16px;
     padding-bottom: 15px;
     border-bottom: 1px solid #ededed;
 
@@ -234,7 +234,7 @@
 }
 
 .additional-goods__promo {
-  width: 159px;
+  width: 161px;
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;

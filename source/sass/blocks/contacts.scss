@@ -9,7 +9,7 @@
 
   @include tablet {
     /* max-width: 768px; */
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     max-width: none;
     width: auto;
     margin: auto;
@@ -84,6 +84,7 @@
 
   @include desktop {
     position: absolute;
+    padding-top: 62px;
     background-color: white;
   }
 }

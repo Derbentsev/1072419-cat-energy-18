@@ -31,6 +31,10 @@
     justify-content: space-between;
     padding-top: 21px;
   }
+
+  @include desktop {
+    padding-top: 4px;
+  }
 }
 
 .catalog__item {
@@ -60,12 +64,18 @@
 
   @include desktop {
     width: 245px;
+    margin: 159px 0 0;
+    padding-bottom: 37px;
   }
 }
 
 .catalog__item:nth-child(2n) .catalog__description {
   @include tablet {
     padding-top: 166px;
+  }
+
+  @include desktop {
+    padding-top: 162px;
   }
 }
 
