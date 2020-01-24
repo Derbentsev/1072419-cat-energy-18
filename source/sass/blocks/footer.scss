@@ -81,6 +81,16 @@
   }
 }
 
+.footer__wrapper svg {
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .footer__logo {
   fill: #666666;
   width: 27px;

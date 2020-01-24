@@ -182,12 +182,18 @@
   &:focus {
     outline: 2px solid #444444;
 
-    & ~ .program-form__svg-mail {
+    & ~ .program-form__svg-mail,
+    ~ .program-form__svg-tel {
       fill: #68b738;
     }
+  }
 
+  &:invalid {
+    outline-color: #ff8282;
+
+    & ~ .program-form__svg-mail,
     & ~ .program-form__svg-tel {
-      fill: #68b738;
+      fill: #ff8282;
     }
   }
 }

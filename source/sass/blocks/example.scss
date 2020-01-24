@@ -188,6 +188,8 @@
 
   @include tablet {
     width: 162px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 
     &:nth-of-type(1) {
       margin-right: 42px;
@@ -195,8 +197,16 @@
   }
 }
 
+.example__item:nth-of-type(1) .example__achievement {
+  @include tablet {
+    left: 24px;
+  }
+}
+
 .example__item:nth-of-type(2) .example__achievement {
-  left: 10px;
+  @include tablet {
+    left: 10px;
+  }
 }
 
 .example__achievement-number {
@@ -279,13 +289,14 @@
 }
 
 .example__image-before {
-  /* max-width: 100%; */
+  max-width: 100%;
 
   @include tablet {
     /*object-fit: cover;
     object-position: -11%; */
     /* width: 690px;
     height: 514px; */
+    max-width: none;
     position: relative;
     left: 31px;
   }
@@ -475,12 +486,21 @@
       content: "";
       display: block;
       position: absolute;
-      top: 12px;
+      top: 13px;
       left: 13px;
       width: 8px;
       height: 8px;
       border-radius: 50%;
       background-color: #68b738;
     }
+  }
+
+  &:hover {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+  }
+
+  &:active {
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+    border: 2px solid #68b738;
   }
 }
