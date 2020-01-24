@@ -42,7 +42,7 @@
     /* flex-direction: row; */
     /* padding: 0 $desktop-padding; */
     /* background-color: #f2f2f2; */
-    background: linear-gradient(to right,#f2f2f2 77%,#ebebeb 23%);
+    background: linear-gradient(to right, #f2f2f2 77%, #ebebeb 23%);
   }
 }
 
@@ -86,7 +86,7 @@
     content: none;
   } */
 
-    @include desktop {
+  @include desktop {
     content: "";
     display: block;
     height: 135px;
