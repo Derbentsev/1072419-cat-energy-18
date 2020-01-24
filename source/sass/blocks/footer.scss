@@ -19,6 +19,7 @@
   }
 
   @include desktop {
+    padding-top: 64px;
     padding-left: 0;
     padding-right: 0;
   }
@@ -77,6 +78,16 @@
     width: 164px;
     margin-top: -5px;
     margin-right: 0;
+  }
+}
+
+.footer__wrapper svg {
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

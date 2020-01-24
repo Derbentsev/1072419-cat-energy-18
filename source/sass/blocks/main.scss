@@ -1,7 +1,9 @@
 /* .main {
-  outline: 1px solid yellow;
-} */
-
+  @include desktop {
+    overflow: hidden;
+  }
+}
+ */
 .main__container {
   display: flex;
   flex-direction: column;

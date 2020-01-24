@@ -57,7 +57,7 @@
     color: #111111;
     font-size: 20px;
     line-height: 20px;
-    text-align: initial;
+    text-align: left;
   }
 }
 
@@ -69,7 +69,7 @@
   @include tablet {
     position: absolute;
     z-index: -1;
-    bottom: -23px;
+    bottom: -31px;
     left: 0;
     width: 709px;
     height: 609px;
@@ -108,6 +108,7 @@
 }
 
 .program-choice__title {
+  width: 320px;
   color: white;
   font-size: 36px;
   line-height: 36px;

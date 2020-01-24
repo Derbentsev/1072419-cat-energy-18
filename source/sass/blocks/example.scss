@@ -8,6 +8,7 @@
 
   @include tablet {
     /* width: 768px; */
+    padding-bottom: 0;
     margin-top: 100px;
     width: 100%;
     background-color: transparent;
@@ -15,8 +16,10 @@
   }
 
   @include desktop {
-    margin-top: 51px;
+    overflow: hidden;
+    margin-top: 0;
     border-top: none;
+    padding-top: 69px;
     padding-bottom: 0;
   }
 }
@@ -38,7 +41,8 @@
     display: flex;
     /* flex-direction: row; */
     /* padding: 0 $desktop-padding; */
-    background-color: #f2f2f2;
+    /* background-color: #f2f2f2; */
+    background: linear-gradient(to right, #f2f2f2 77%, #ebebeb 23%);
   }
 }
 
@@ -54,17 +58,34 @@
     width: auto;
     margin-top: 27px;
     padding: 0;
+    position: relative;
+    background: linear-gradient(to right, #f2f2f2 50%, #ebebeb 50%);
   }
 
   @include desktop {
     /* width: 1220px; */
     /* flex-direction: row; */
+    margin-top: 24px;
     background-color: #f2f2f2;
     position: relative;
   }
 }
 
 .example__wrapper-all::before {
+  @include tablet {
+    content: "";
+    display: block;
+    height: 576px;
+    width: 100%;
+    background: white;
+    position: absolute;
+    top: 0;
+  }
+
+  /* @include desktop {
+    content: none;
+  } */
+
   @include desktop {
     content: "";
     display: block;
@@ -89,6 +110,7 @@
   margin-top: 23px;
 
   @include tablet {
+    position: relative;
     margin: auto;
     margin-top: 64px;
     width: 708px;
@@ -96,6 +118,8 @@
 
   @include desktop {
     /* margin-right: 139px; */
+    width: 431px;
+    flex-shrink: 0;
     margin: 0;
   }
 }
@@ -164,6 +188,8 @@
 
   @include tablet {
     width: 162px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 
     &:nth-of-type(1) {
       margin-right: 42px;
@@ -171,8 +197,16 @@
   }
 }
 
+.example__item:nth-of-type(1) .example__achievement {
+  @include tablet {
+    left: 24px;
+  }
+}
+
 .example__item:nth-of-type(2) .example__achievement {
-  left: 10px;
+  @include tablet {
+    left: 10px;
+  }
 }
 
 .example__achievement-number {
@@ -206,7 +240,8 @@
     bottom: -7px;
     padding-left: 8px;
     padding-right: 9px;
-    background-color: white;
+    background: #ffffff;
+    /* background-color: white; */
     font-size: 14px;
   }
 
@@ -236,24 +271,42 @@
 
 .example__image picture:first-child {
   width: 372px;
+  overflow: hidden;
+
+  @include desktop {
+    width: 520px;
+  }
+}
+
+.example__image picture:last-child {
+  overflow: hidden;
+  width: 338px;
+
+  @include desktop {
+    width: auto;
+    margin-top: -19px;
+  }
 }
 
 .example__image-before {
   max-width: 100%;
 
   @include tablet {
-    width: 371px;
-    height: 514px;
-    object-fit: cover;
-    object-position: -11%;
+    /*object-fit: cover;
+    object-position: -11%; */
+    /* width: 690px;
+    height: 514px; */
+    max-width: none;
+    position: relative;
+    left: 31px;
   }
 
   @include desktop {
-    width: 372px;
-    height: 517px;
-    object-position: 9px;
-    margin-top: -15px;
-    /* margin-bottom: 48px; */
+    /* width: 372px;
+    height: 517px; */
+    /* object-position: 10px; */
+    left: 30%;
+    top: -20px;
   }
 }
 
@@ -261,17 +314,20 @@
   display: none;
 
   @include tablet {
-    width: 337px;
-    height: 517px;
-    object-fit: cover;
-    object-position: 96%;
+    /* width: 337px;
+    height: 517px; */
+    /* object-fit: cover;
+    object-position: 96%; */
     display: block;
+    position: relative;
+    right: 340px;
   }
 
   @include desktop {
-    object-position: 93%;
+    /* object-position: 93%;
     margin-top: -14px;
-    margin-right: -33px;
+    margin-right: -33px; */
+    left: -53%;
   }
 }
 
@@ -316,7 +372,7 @@
 .example__stripe {
   display: flex;
   justify-content: space-between;
-  margin-top: 36px;
+  margin-top: 29px;
   padding-left: 36px;
   padding-right: 31px;
 
@@ -327,7 +383,9 @@
   }
 
   @include desktop {
-    margin-top: 41px;
+    /* margin-top: 41px; */
+    margin-bottom: 11px;
+    margin-left: 142px;
   }
 }
 
@@ -371,6 +429,16 @@
     padding-bottom: 0;
     background: transparent;
   }
+
+  /* &::before {
+    @include tablet {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 708px;
+      height: 167px;
+      background-color: white;
+      /* z-index: -1; */
 }
 
 .example__slider {
@@ -386,12 +454,13 @@
     border: none;
     width: 428px;
     height: 6px;
-    left: 19px;
+    left: -2px;
     background-color: #dcdcdc;
   }
 
   @include desktop {
     top: 7px;
+    left: 20px;
   }
 }
 
@@ -417,12 +486,21 @@
       content: "";
       display: block;
       position: absolute;
-      top: 12px;
+      top: 13px;
       left: 13px;
       width: 8px;
       height: 8px;
       border-radius: 50%;
       background-color: #68b738;
     }
+  }
+
+  &:hover {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+  }
+
+  &:active {
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+    border: 2px solid #68b738;
   }
 }

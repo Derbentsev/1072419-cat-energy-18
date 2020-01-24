@@ -41,8 +41,12 @@
     }
 
     @include tablet {
-      margin-top: auto;
+      margin-top: 82px;
       margin-bottom: 0;
+    }
+
+    @include desktop {
+      margin-top: 89px;
     }
   }
 }
