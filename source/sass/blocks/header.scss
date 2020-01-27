@@ -212,17 +212,17 @@
   display: block;
   width: 191px;
   height: 39px;
-  background-image: url("../img/logo-mobile.svg");
+  background-image: url("../img/icon-logo-mobile.svg");
   background-repeat: no-repeat;
 
   @include tablet {
-    background-image: url("../img/logo-tablet.svg");
+    background-image: url("../img/icon-logo-tablet.svg");
     width: 174px;
     height: 59px;
   }
 
   @include desktop {
-    background-image: url("../img/logo-desktop.svg");
+    background-image: url("../img/icon-logo-desktop.svg");
     width: 203px;
     height: 60px;
   }
